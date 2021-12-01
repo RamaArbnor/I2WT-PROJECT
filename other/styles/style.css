@@ -1,0 +1,131 @@
+@font-face {
+	src: url(../fonts/MilkyNice.ttf);
+	font-family: milk;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: milk;
+	text-align: center;
+}
+
+/* BODY */
+body {
+	background-color: black;
+}
+body::-webkit-scrollbar{
+	display: none;
+}
+
+/* NAVIGATION */
+.nav-bar {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 7vh;
+	/*display: flex;*/
+	/*align-items: center;*/
+	background-color: black;
+	z-index: 9;
+	transform: translateY(-100%);
+	transition: transform 0.5s ease;
+}
+.shown {
+	transform: translateY(0%);
+}
+.main-icon {
+	width: 20%;
+	height: inherit;
+	display: grid;
+	align-items: center;
+	/*margin: 10px;
+	margin-left: 30px;*/
+	float: left;
+	/*background-color: red;*/
+	transition: 0.5s ease;
+}
+.main-icon:hover {
+	color: #2b00ff;
+}
+
+
+.nav-left {
+	width: 40%;
+	height: inherit;
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: 25%;
+	align-items: center;
+	float: left;
+	/*background-color: blue;*/
+}
+
+.nav-right {
+	width: 25%;
+	height: inherit;
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: 33%;
+	align-items: center;
+	float: right;
+	/*background-color: green;*/
+}
+
+
+
+/* All Nav Text */
+nav a {
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	transition: 0.2s ease;
+}
+nav a:hover {
+	color: #2b00ff;
+	/*color: #7100bd;*/
+	font-size: 23px;
+}
+
+.main-icon a {
+	font-size: 25px;
+}
+.main-icon a:hover {
+	font-size: 30px;
+}
+
+/* MONTAGE */
+.montage-container {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	z-index: -1;
+}
+.montage {
+	position: fixed;
+	top: -15px;
+	left: -15px;
+	width: 105%;
+	filter: brightness(50%);
+}
+
+.logo {
+	margin-top: 50vh;
+	transform: translate(0%, -50%);
+	color: whitesmoke;
+	font-size: 200px;
+	/*background-color: yellow;*/
+}
+
+/* MAIN DIVS */
+.first-category {
+	width: 100%;
+	height: 300px;
+	margin-top: 22vh;
+	background-image: linear-gradient(50deg, #001685, #7100bd);
+	filter: brightness(70%);
+	/*font-size: 1.2em;
+	line-height: 1.5em;*/
+}
