@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<meta charset='utf-8'>
+	<link rel='stylesheet' type='text/css' href='./style.css'>
+	<script src='script.js'></script>
+	<title>Planet Theme Template</title>
 </head>
-<body class="content">
-	<div class="navbar">
-		
-		<ul>
-			<li id="first"><a href="html/main.html" >Main</a> </li>
-			<li><a href="html/">Page 1</a> </li>
-			<li><a href="html/">Page 2</a> </li>
-		</ul>
-
-		<div class="submenu">
-			<!-- <p>adasdasd</p> -->
+<body onscroll='showNav()'>
+	<div>
+		<div class='montage-container'>
+			<img id='bg_img' src='montage_v1.png' class='montage'>
 		</div>
 
-	</div>
+		<nav id='nav_bar' class='nav-bar'>
+			<div class='main-icon'><a href='#'>CARTOONS</a></div>
 
-	<div class="content">
-		
+			<div class='nav-left'>
+				<div class='nav-cat'><a href='#'>History</a></div>
+				<div class='nav-cat'><a href='#'>Styles</a></div>
+				<div class='nav-cat'><a href='#'>Studios</a></div>
+				<div class='nav-cat'><a href='#' style="margin-left: 12px;">Principles</a></div>
+			</div>
 
+			<div class='nav-right'>
+				<div class='nav-cat'><a href='#'>About</a></div>
+				<div class='nav-cat'><a href='#'>Log In</a></div>
+				<div class='nav-cat'><a href='#'>Sign up</a></div>
+			</div>
+		</nav>
+
+		<div class="logo">CARTOONS</div>
+
+		<div id='test' class='first-category'></div>
 	</div>
 </body>
 </html>
