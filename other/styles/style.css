@@ -247,3 +247,13 @@ nav a:hover {
 .column a:hover {
 	color: darkgrey;
 }
+#sidebar {
+  height: 80%; 
+  width: 20%; 
+  position: absolute; 
+  z-index: 1;
+  top: 100px; 
+  left: 0; 
+  padding-top: 20px;
+  background-color: mediumturquoise;
+}
