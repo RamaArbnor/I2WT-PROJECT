@@ -2,36 +2,135 @@
 <html>
 <head>
 	<meta charset='utf-8'>
-	<link rel='stylesheet' type='text/css' href='./other/styles/style.css'>
+	<link rel='stylesheet' type='text/css' href='../other/styles/style.css'>
 	<title>Planet Theme Template</title>
 </head>
 <body onscroll='showNav()'>
 	<div>
 		<div class='montage-container'>
-			<img id='bg_img' src='./images/montage_v1.png' class='montage'>
+			<img id='bg_img' src='../images/montage_v1.png' class='montage'>
 		</div>
 
 		<nav id='nav_bar' class='nav-bar'>
 			<div class='main-icon'><a href='#'>CARTOONS</a></div>
 
 			<div class='nav-left'>
-				<div class='nav-cat'><a href='#' id="nav_a_0">History</a></div>
-				<div class='nav-cat'><a href='#' id="nav_a_1">Styles</a></div>
-				<div class='nav-cat'><a href='#' id="nav_a_2">Studios</a></div>
-				<div class='nav-cat'><a href='#' id="nav_a_3" style="margin-left: 12px;">Principles</a></div>
+				<div class='nav-cat'><a href='#historyPanel' id="nav_a_0">History</a></div>
+				<div class='nav-cat'><a href='#stylesPanel' id="nav_a_1">Styles</a></div>
+				<div class='nav-cat'><a href='#studiosPanel' id="nav_a_2">Studios</a></div>
+				<div class='nav-cat'><a href='#principalsPanel' id="nav_a_3" style="margin-left: 12px;">Principles</a></div>
 			</div>
 
 			<div class='nav-right'>
 				<div class='nav-cat'><a id="nav_a_4" href='#'>About</a></div>
-				<div class='nav-cat'><a id="nav_a_5" href='#'>Log In</a></div>
+				<div class='nav-cat'><a id="nav_a_5" href='html/login.html'>Log In</a></div>
 				<div class='nav-cat'><a id="nav_a_6" href='#'>Sign up</a></div>
 			</div>
 		</nav>
 
 		<div class="logo">CARTOONS</div>
 
-		<div id='test' class='first-category'></div>
+<!-- 		<div id='historyPanel' class='panel'>
+			<div id="historyLeft" class="left">b</div>
+			<div id="historyRight" class="right">c</div>					
+		</div>
+
+		<div id='stylesPanel' class='panel'>
+			<div id="stylesLeft" class="left" id="second">b</div>
+			
+
+
+			<div id="stylesRight" class="right" id="second">c</div>					
+		</div>
+
+		<div id='studiosPanel' class='panel'>
+			<div id="studiosLeft" class="left">b</div>
+			<div id="studiosRight" class="right">c</div>					
+		</div>
+
+		<div id='principalsPanel' class='panel'>
+			<div id="principalsLeft" class="left" id="second">b</div>
+			<div id="principalsRight" class="right" id="second">c</div>					
+		</div> -->
+
+
 	</div>
+
+
+		<div class="panel" id="historyPanel">
+			<div class="left">
+				<img src="images/history.png">
+			</div>
+
+			<div class="right">
+				<div class="center">
+					<h1>All about the history of cartoons</h1>	
+					<p>The first cartoon ever to be made dates way back to 1908. Fantasmagorie, a French animated film by Emile Cohl is known to be one of the earliest examples of traditional, hand-drawn animation.</p>					
+				</div>
+
+			</div>
+		
+		</div>
+
+		<div class="panel" id="stylesPanel">
+			<div class="left">
+				<div class="center">
+					<h1>Styles</h1>
+					<p>With so many distinct forms of animation and their unique performance of the many styles of animation, it's critical to understand the differences in order to make an informed decision for your next entertainment production.</p>
+				</div>
+			</div>
+
+			<div class="right">
+				<img src="images/styles.jpg">
+			</div>
+
+		</div>
+
+		<div class="panel" id="studiosPanel">
+			<div class="left">
+				<img src="images/studios.png">
+			</div>
+			<div class="right">
+				<div class="center">
+					<h1>Studios</h1>
+					<p>An animation studio is a company producing animated media. The broadest such companies conceive of products to produce, own the physical equipment for production, employ operators for that equipment, and hold a major stake in the sales or rentals of the media produced.</p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="panel" id="principalsPanel">
+			<div class="left">
+				<div class="center">
+					<h1>Read about Disney's animation fundamental rules</h1>
+					<p>Forming the basis of all animation work, the first lessons that every begginer animator learns are the 12 principles of animation - the factors that make a piece of art truly come to life.</p>
+				</div>
+			</div>
+			<div class="right">
+				<img src="images/principal.png">
+			</div>
+		</div>
+	
+	<div class="footer">
+		<ul>
+			<ul class="column">
+				<a href="">Arbnor</a>
+				<a href="">Ylber</a>				
+
+			</ul>
+			<ul class="column">
+				<a href="">Edon</a>
+				<a href="">Anduena</a>				
+								
+			</ul>
+			<ul class="column">
+				<a href="">Gent</a>
+				<a href="">Referenceszzzz</a>			
+								
+			</ul>
+		</ul>
+	</div>
+
 
 	<script src='./other/script/script.js'></script>
 </body>

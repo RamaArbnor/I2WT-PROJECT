@@ -3,7 +3,7 @@ function showNav(){
 	var montage = document.getElementById('bg_img')
 	// console.log(montage.style.opacity)
 
-	montage.style.opacity = 1 + window.scrollY / -650
+	// montage.style.opacity = 1 + window.scrollY / -650
 
 	// console.log(montage.style.opacity)
 	// console.log(window.scrollY)
