@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <link rel='stylesheet' type='text/css' href='../other/styles/style.css'>
+        
+        <style>
+            body {
+                background-color: white;
+            }
+            #nav_bar {
+                position: static;
+                transform: translateY(0%);
+            }
+            .dot {
+                height: 15px;
+                width: 15px;
+                background-color: white;
+                border-radius: 50%;
+                display: inline-block;
+                border-color: black;
+                border-radius: 10;
+                border-style: solid;
+                transition: 0.5s ease;
+                position: absolute;
+                z-index: +1;
+                transition: all 0.1s ease-in-out;
+                left: 11%
+            }
+            .dot:hover {
+                transform: scale(1.3,1.3);
+                }
+            #dot1 {
+                top: 20%;
+/*                left: 11%;*/
+            }
+            #dot2 {
+                top: 33%;
+/*                left: 11%;*/
+            }
+            #dot3 {
+                top: 46%;
+/*                left: 11%;*/
+            }
+            #dot4 {
+                top: 59%;
+/*                left: 11%;*/
+            }
+            #dot5 {
+                top: 72%;
+/*                left: 11%;*/
+            }
+            #dot6 {
+                top: 85%;
+/*                left: 11%;*/
+            }
+            
+            
+            .vl {
+                height: 15%;
+                width: 2.3px;
+                background-color: black;
+                display: inline-block;
+                position: absolute;
+                left: 11.67%;
+            }
+            #vl1 {
+                top: 20%
+            }
+            #vl2 {
+                top: 32%
+            }
+            #vl3 {
+                top: 44%
+            }
+            #vl4 {
+                top: 58%
+            }
+            #vl5 {
+                top: 70%
+            }
+            #slides {
+                width: 80%;
+                height: 80vh;
+                background-color: rgb(230,230,230);
+                position: absolute;
+                /*z-index: -1;*/
+                left: 17%;
+                border-radius: 10px;
+                top: 15vh;
+                overflow-y: auto;
+                overflow-x: hidden;
+                transition: all 0.5s ease;
+            }
+            .footer{
+                width: 100%;
+                z-index: +4;
+                margin-top: 100vh;
+            }
+            .sidebar {
+                z-index: 0;
+            }
+            #pointer {
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 21px 52px 21px 0;
+                border-color: transparent rgb(230,230,230) transparent transparent;
+                position: absolute;
+                top: 18.3%;
+                left: 13.5%;
+                transition: all 0.3s ease-in-out;
+            }
+/*
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+*/
+        </style>
+        
+    </head>
+    <body>
+        <nav id='nav_bar' class='nav-bar'>
+			<div class='main-icon'><a href='#'>CARTOONS</a></div>
+
+			<div class='nav-left'>
+				<div class='nav-cat'><a href='#historyPanel' id="nav_a_0">History</a></div>
+				<div class='nav-cat'><a href='#stylesPanel' id="nav_a_1">Styles</a></div>
+				<div class='nav-cat'><a href='#studiosPanel' id="nav_a_2">Studios</a></div>
+				<div class='nav-cat'><a href='#principalsPanel' id="nav_a_3" style="margin-left: 12px;">Principles</a></div>
+			</div>
+
+			<div class='nav-right'>
+				<div class='nav-cat'><a id="nav_a_4" href='#'>About</a></div>
+				<div class='nav-cat'><a id="nav_a_5" href='html/login.html'>Log In</a></div>
+				<div class='nav-cat'><a id="nav_a_6" href='#'>Sign up</a></div>
+			</div>
+		</nav>
+        <br><br><br><br><br><br><br>
+        
+        <div class="sideBar">
+        <div class="dot" id="dot1"></div>
+        <div class="dot" id="dot2"></div>
+        <div class="dot" id="dot3"></div>
+        <div class="dot" id="dot4"></div>
+        <div class="dot" id="dot5"></div>
+        <div class="dot" id="dot6"></div>        
+        <div class="vl" id="vl1"></div>
+        <div class="vl" id="vl2"></div>
+        <div class="vl" id="vl3"></div>
+        <div class="vl" id="vl4"></div>
+        <div class="vl" id="vl5"></div>
+        <div id="pointer"></div>
+        </div>
+        <div id="slides">
+            <h1>sdhfj</h1>
+            <h2>sdfsdfsdfsdf</h2>
+            <p>sadfjhsdjfhjksdfh</p>
+            <p>Pues...En realidad, no es mucho difícil, no es como mis amigos dicen; dicen que español es taaaaaaaan difícil, son (o están?) equivocado. Si sigue en las clases (que no ellos hacen), la aprendizaje no es un problema.</p><br><br><br><br><br><br>
+
+            <p>Solamente he estudiado español durante casi tres años ahora, y mira! Ya mi español es mas o menos! Puedo hablar un poco sin un diccionario, es bastante bien.</p><br><br><br><br><br><br><br><br><br>
+
+            <p>Pienso que voy a continuar estudiar español en la escuela secondaria tambien. Me pregunto qué bien mi español va a ser después de tres más años de aprender este idioma. Tal vez/quízas (difference?) puedo hablar español con fluidez dentro de/en tres años? No sé jajajajaaja.</p><br><br><br><br><br><br><br><br>
+
+            <p>Estoy escribiendo una carta a alguien/alguno no(?) ni existe, estoy muy raro... Pero no es importante porque estoy preparando para mi examen en español para jueves, y esa es más importante que mis pensamientos sobre me. Tengo que conseguir una A de mi nota, porque (lo/eso??) es mi semestre último en la escuela primaria.</p><br><br>
+        </div>
+
+        <div class="footer" >
+            <ul>
+                <ul class="column">
+                    <a href="">Arbnor</a>
+                    <a href="">Ylber</a>				
+                </ul>
+                <ul class="column">
+                    <a href="">Edon</a>
+                    <a href="">Anduena</a>								
+                </ul>
+                <ul class="column">
+                    <a href="">Gent</a>
+                    <a href="">Referenceszzzz</a>							
+                </ul>
+            </ul>
+        </div>    
+        
+        <script type="text/javascript">
+            var pointerEl = document.getElementById('pointer')
+            var dotEls = document.getElementsByClassName('dot')
+            var slidesEl = document.getElementById('slides')
+
+            var movePointer = function(){
+                var x = this
+                    slidesEl.style.width = '0px'
+                    // slidesEl.style.height = '0px'
+                    pointerEl.style.top = parseFloat(window.getComputedStyle(x).top) - 13 + 'px'
+                setTimeout(function (){
+                    slidesEl.style.width = '80%'
+                    // slidesEl.style.height = '80vh'
+                }, 400)
+                
+                
+            }
+
+            for(var i = 0;i < dotEls.length; i ++){
+                dotEls[i].addEventListener("click", movePointer);
+            }
+        </script>
+    </body>
+</html>

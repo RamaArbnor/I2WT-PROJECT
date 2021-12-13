@@ -31,7 +31,7 @@ body::-webkit-scrollbar{
 	height: 7vh;
 	/*display: flex;*/
 	/*align-items: center;*/
-	background-color: #404EED;
+	background-color: #2D3E50;
 	z-index: 9;
 	transform: translateY(-100%);
 	transition: transform 0.5s ease;
@@ -77,6 +77,23 @@ body::-webkit-scrollbar{
 	/*background-color: green;*/
 }
 
+.nav-cat{
+	/*display: flex;*/
+	height: inherit;
+	width: auto;
+	display: grid;
+	align-items: center;
+	/*align-items: center;*/
+	/*background-color: lime;*/
+}
+
+.nav-finger{
+	position: absolute;
+	width: 25px;
+	top: -100%;
+	transform: rotateZ(200deg);
+	transition: all 0.3s ease;
+}
 
 
 /* All Nav Text */
@@ -84,12 +101,13 @@ nav a {
 	text-decoration: none;
 	font-size: 20px;
 	color: white;
-	transition: 0.2s ease;
+	transition: all 0.2s ease, transform 0.8s ease;
+	vertical-align: center;
 }
 nav a:hover {
-	color: #2b00ff;
+	/*color: #2b00ff;*/
 	/*color: #7100bd;*/
-	font-size: 23px;
+	/*font-size: 23px;*/
 }
 
 .main-icon a {
@@ -109,7 +127,8 @@ nav a:hover {
 }
 .montage {
 	position: fixed;
-	top: -15px;
+	/*top: -15px;*/
+	top: -3%;
 	left: -15px;
 	width: 105%;
 	filter: brightness(90%);
@@ -120,6 +139,7 @@ nav a:hover {
 	transform: translate(0%, -50%);
 	color: whitesmoke;
 	font-size: 200px;
+	height: 35vh;
 	/*background-color: yellow;*/
 }
 
@@ -153,6 +173,9 @@ nav a:hover {
 }
 
 /* MAIN DIVS */
+.panels{
+	margin-top: 40vh;
+}
 .panel {
 	width: 100%;
 	height: 680px;
@@ -166,24 +189,46 @@ nav a:hover {
 	/*background-color: blue;*/
 }
 .right {
+	text-align: center;
 	width: 50%;
 	height: 680px;
 	float: left;
 	/*background-color: limegreen;*/
-
 }
+.slide{
+	position: absolute;
+	background-color: #2D3E50;
+	z-index: 2;
+	width: 200%;
+	height: 680px;
+	transform: translate(-100%, -100%);
+	transition: transform 1.5s ease;
+}
+.btn-read{
+	position: relative;
+	display: none;
+	top: -50%;
+	transform: translateY(-50%);
+	padding: 7px 17px 7px 17px;
+	color: #2D3E50;
+	background-color: transparent;
+	font-size: 32px;
+	border: 5px solid #2D3E50;
+	border-radius: 50px;
+}
+
 .panel h1{
 	padding: 50px;
 }
 .panel p{
-	font-size: 25px;
-	width: 500px;
+	font-size: 23px;
+	/*width: 500px;*/
+	/*background-color: red;*/
 }
 
 
 /*History Panel*/
 #historyPanel {
-	margin-top: 300px;
 }
 #historyPanel img {
 	margin-top: 5%;
