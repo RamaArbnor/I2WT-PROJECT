@@ -99,9 +99,6 @@ function slidePanel(id, btn_id, slide_id) {
 	slide.style.transform = 'translate(50%, -100%)'
 	setTimeout(() => {
 		btn.style.display = 'inline'
+		panel.style.filter = 'blur(3px)'
 	}, 300)
-
-	for (var i = 0; i < content; i++) {
-		content[i].style.filter = 'brightness(0.5)'
-	}
 }
