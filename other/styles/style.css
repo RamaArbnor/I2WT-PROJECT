@@ -226,6 +226,7 @@ nav a:hover {
 	/*background-color: red;*/
 }
 
+
 /*History Panel*/
 #historyPanel {
 }
@@ -264,6 +265,7 @@ nav a:hover {
 	margin-top: 15%;
 }
 
+
 /*Footer*/
 .footer {
 	text-align: flushleft;
@@ -289,35 +291,4 @@ nav a:hover {
 }
 .column a:hover {
 	color: darkgrey;
-}
-
-/* About Page Css */
-.content-about {
-	margin: auto;
-	margin-top: 5%;
-	width: 80%;
-	height: 1600px;
-	background-color: white;
-}
-#about-text {
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	/* padding-top: 100px; */
-	height: 100%;
-	
-}
-#about-text > h1 {
-	padding-top: 80px;
-	/* padding-left: 20px; */
-	/* text-align: left; */
-	/* font-family: ProximaNova-Bold,Helvetica,sans-serif!important; */
-    font-weight: bold;
-	font-size: 3em;
-}
-#about-text > p {
-	font-family: ProximaNova-Bold,Helvetica,sans-serif!important;
-	padding-top: 25px;
-	/* text-align: left; */
-	font-size: 1.5em;
 }
