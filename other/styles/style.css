@@ -225,12 +225,11 @@ nav a:hover {
 	/*width: 500px;*/
 	/*background-color: red;*/
 }
-.panel img{
-}
 
 
 /*History Panel*/
-#historyPanel {}
+#historyPanel {
+}
 #historyPanel img {
 	margin-top: 5%;
 	margin-left: auto;

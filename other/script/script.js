@@ -18,7 +18,7 @@ function showNav(){
 // 	// console.log(montage.style.opacity)
 // 	// console.log(montage.style.opacity)
 // 	// console.log(window.scrollY)
-// 	montage.style.opacity = 1 + window.scrollY / -1350
+// 	montage.style.opacity = 1 + window.scrollY / -650
 // })
 
 
@@ -54,7 +54,7 @@ function hoverNavItem(a_id, finger_id) {
 
 	setTimeout(() => {
 		nav_item.style.fontSize = '35px'
-		nav_item.style.color = 'red'
+		nav_item.style.color = 'black'
 	}, 100)
 
 	setTimeout(() => {
@@ -99,6 +99,9 @@ function slidePanel(id, btn_id, slide_id) {
 	slide.style.transform = 'translate(50%, -100%)'
 	setTimeout(() => {
 		btn.style.display = 'inline'
-		panel.style.filter = 'blur(3px)'
 	}, 300)
+
+	for (var i = 0; i < content; i++) {
+		content[i].style.filter = 'brightness(0.5)'
+	}
 }
