@@ -331,3 +331,141 @@ nav a:hover {
 	/* text-align: left; */
 	font-size: 1.5em;
 }
+
+
+/* Sidebar */
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+
+:after {
+    content: "";
+}
+.sidebar {
+    float: left;
+	position: relative;
+	top: 0;
+    left: 0;
+	background: transparent;
+}
+
+.sidebar ul {
+	text-align: center;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+	position: relative;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+	background: crimson;
+	text-transform: uppercase;
+	transition:all .4s ease-out;
+}
+
+.sidebar ul li:after {
+	position: absolute;
+	background: white;
+	color: crimson;
+	top:0;
+	left: 70px
+	width: 70px; height: 100%;
+    opacity:.5;
+    transform: perspective(400px) rotateY(90deg);
+	transform-origin: 0 100%;
+	transition:all .4s ease-out;
+}
+
+.sidebar ul li:hover {
+    transform: translateX(-70px);
+}
+
+.sidebar ul li:hover:after {
+    opacity: 1;
+	transform: perspective(400px) rotateY(0deg) scale(1) ;
+}
+.sidebar ul li div { 
+    position: relative; 
+}
+
+/*Images and gifs*/
+#disney, #dreamworks{
+    padding-top: 15.5px;
+    width: 70px;
+    height: auto;
+}
+#warnerbros{
+    padding-top: 10px;
+    width: 70px;
+    height: auto;
+}
+#ghibli{
+    padding-top: 15.5px;
+    width: 70px;
+    height: auto;
+}
+#pixar{
+    padding-top: 30px;
+    width: 70px;
+    height: auto;
+}
+#disney_gif {
+    position: absolute;
+    top: 0;
+    width: inherit;
+    height: inherit;
+    z-index: 2;
+    transform-origin: 0 100%;
+    transform: rotateY(90deg);
+    transition: all .4s ease-out;
+}
+#warnerbros_gif {
+    position: absolute;
+    top: 0;
+    left: inherit;
+    width: inherit;
+    height: inherit;
+    z-index: 2;
+    transform-origin: 0 100%;
+    transform: rotateY(90deg);
+    transition: all .4s ease-out;
+}
+#dreamworks_gif {
+    position: absolute;
+    top: 0;
+    left: inherit;
+    width: inherit;
+    height: inherit;
+    z-index: 2;
+    transform-origin: 0 100%;
+    transform: rotateY(90deg);
+    transition: all .4s ease-out;
+}
+#pixar_gif {
+    position: absolute;
+    top: 0;
+    left: inherit;
+    width: inherit;
+    height: inherit;
+    z-index: 2;
+    transform-origin: 0 100%;
+    transform: rotateY(90deg);
+    transition: all .4s ease-out;
+}
+#ghibli_gif {
+    position: absolute;
+    top: 0;
+    left: inherit;
+    width: inherit;
+    height: inherit;
+    z-index: 2;
+    transform-origin: 0 100%;
+    transform: rotateY(90deg);
+    transition: all .4s ease-out;
+}
+.sidebar ul li > div {
+	display: inline-block;
+	padding: 25px 0;
+	background: transparent;
+}
