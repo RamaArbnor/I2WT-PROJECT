@@ -7,11 +7,17 @@ html {
   scroll-behavior: smooth;
 }	
 
+/* body {
+	cursor: url(http://www.rw-designer.com/cursor-extern.php?id=58768), auto;
+} */
+
+
 * {
 	margin: 0;
 	padding: 0;
 	font-family: milk;
 	text-align: center;
+	cursor: url(../../images/mouse.cur), auto;
 }
 
 /* BODY */
@@ -35,6 +41,7 @@ body::-webkit-scrollbar{
 	z-index: 9;
 	transform: translateY(-100%);
 	transition: transform 0.5s ease;
+	user-select: none;
 }
 .shown {
 	transform: translateY(0%);
@@ -291,4 +298,36 @@ nav a:hover {
 }
 .column a:hover {
 	color: darkgrey;
+}
+
+
+/* About Page Css */
+.content-about {
+	margin: auto;
+	margin-top: 5%;
+	width: 80%;
+	height: 1600px;
+	background-color: white;
+}
+#about-text {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	/* padding-top: 100px; */
+	height: 100%;
+	
+}
+#about-text > h1 {
+	padding-top: 80px;
+	/* padding-left: 20px; */
+	/* text-align: left; */
+	/* font-family: ProximaNova-Bold,Helvetica,sans-serif!important; */
+    font-weight: bold;
+	font-size: 3em;
+}
+#about-text > p {
+	font-family: ProximaNova-Bold,Helvetica,sans-serif!important;
+	padding-top: 25px;
+	/* text-align: left; */
+	font-size: 1.5em;
 }
