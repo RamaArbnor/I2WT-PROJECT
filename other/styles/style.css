@@ -344,7 +344,8 @@ nav a:hover {
 .sidebar {
     float: left;
 	position: relative;
-	top: 0;
+    top: 350px;
+    transform: translate(0%,-50%);
     left: 0;
 	background: transparent;
 }
@@ -468,4 +469,25 @@ nav a:hover {
 	display: inline-block;
 	padding: 25px 0;
 	background: transparent;
+}
+/*Studio-Content*/
+#content_background{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 350px;
+    left: 500px;
+    transform: translate(0%, -50%);
+/*
+    opacity: 40%;
+    filter: blur(20px);
+*/
+    background-color: fuchsia;
+    z-index: -1;
+}
+#studio_content{
+    position: absolute;
+    top: 350px;
+    left: 550px;
+    transform: translate(0%, -50%);
 }
