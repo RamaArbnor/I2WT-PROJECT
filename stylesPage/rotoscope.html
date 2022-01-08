@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = 'utf-8'>
+        <link rel='stylesheet' type='text/css' href='../other/styles/style.css'>
+        <link rel='stylesheet' type='text/css' href='manga.html'>
+        <link rel='stylesheet' type='text/css' href='dimensionaltwo.html'>
+        <link rel='stylesheet' type='text/css' href='dimensionalthree.html'>
+        <link rel='stylesheet' type='text/css' href='traditional.html'>
+        <!--<link rel='stylesheet' type='text/css' href='dimensionalthree.html'>-->
+
+        <title>Animation Styles</title>
+        <style>  
+        body { 
+        background: url('../images/bufi.jpg') no-repeat center fixed; 
+        background-size: cover;
+        }
+           .nav-bar{
+                position: fixed;
+                transform: translateY(0%);
+            }
+            #studios_content{
+                position: static;
+            }
+            body {
+                
+                color: white;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 14px;
+                /*font-smoothing: anti-aliased;*/
+                
+            }
+            .sidebar li{
+            list-style-type: none;
+        }
+      
+        h3 {
+            color:black;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            font-size: 24;
+        }
+            p {
+                font-size: 18px;
+                color:black;
+                
+            }
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #364b60;
+  overflow-x: hidden;
+  padding-top: 20px;
+  margin-top: 7vh;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FFF;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+h5 {
+  color: black;
+}
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 50px;
+  margin-top:5%;
+}
+        </style>
+    </head>
+     <body onscroll='showNav()'>
+
+        <!-- header -->
+        <nav id='nav_bar' class='nav-bar'>
+			<div class='main-icon'><a href='#'>CARTOONS</a></div>
+
+			<div class='nav-left'>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_0', 'nav_finger_0')" onmouseleave="leaveNavItem('nav_a_0', 'nav_finger_0')" onclick="jumpToPanel('nav_a_0')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_0"><a href='../html/history.html' id="nav_a_0">History</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_1', 'nav_finger_1')" onmouseleave="leaveNavItem('nav_a_1', 'nav_finger_1')" onclick="jumpToPanel('nav_a_1')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_1"><a href='../html/styles.html' id="nav_a_1">Styles</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_2', 'nav_finger_2')" onmouseleave="leaveNavItem('nav_a_2', 'nav_finger_2')" onclick="jumpToPanel('nav_a_2')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_2"><a href='../html/studios.html' id="nav_a_2">Studios</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_3', 'nav_finger_3')" onmouseleave="leaveNavItem('nav_a_3', 'nav_finger_3')" onclick="jumpToPanel('nav_a_3')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_3"><a href='#principalsPanel' id="nav_a_3" style="margin-left: 12px;">Principles</a></div>
+			</div>
+
+			<div class='nav-right'>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_4', 'nav_finger_4')" onmouseleave="leaveNavItem('nav_a_4', 'nav_finger_4')" onclick="jumpToPanel('nav_a_4')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_4"><a id="nav_a_4" href='../html/about.html'>About</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_5', 'nav_finger_5')" onmouseleave="leaveNavItem('nav_a_5', 'nav_finger_5')" onclick="jumpToPanel('nav_a_5')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_5"><a id="nav_a_5" href='../html/login.html'>Log In</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_6', 'nav_finger_6')" onmouseleave="leaveNavItem('nav_a_6', 'nav_finger_6')" onclick="jumpToPanel('nav_a_6')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_6"><a id="nav_a_6" href='#'>Sign up</a></div>
+			</div>
+		</nav>
+        <!-- sidebar -->
+        <div class="sidenav">
+            <a href="traditional.html">Traditional</a>
+            <a href="dimensionaltwo.html">Two Dimensional</a>
+            <a href="dimensionalthree.html">Three Dimensional</a>
+            <a href="manga.html">Manga</a>
+            <a href="#">Rotoscope</a>
+        </div>
+    
+            <!---<div style="background-image:url('https://www.yukfoo.net/data/catalogue/items/ICEdewlineupalex_1271x635.jpg');"></div>;--->
+
+            <div id = "content" class="main">
+                <h3>Traditional</h3>
+                
+                <p><b>Traditional animation</b> first appeared more than 140 years ago in 1877, when Emil Reynaud showed the world an apparatus for 
+                    demonstrating moving drawings.
+                    As the name now suggests, traditional animation means creating each frame manually using a pencil and a piece of paper.
+                     Of course, this is a very time-consuming process, but now there are special programs that exponentially simplify the task.
+                    The first series of Tom and Jerry cartoons were created manually more than 70 years ago.
+        
+                    Sometimes you'll hear the opinion that traditional animation is dead, but this is not entirely true. 
+                    Traditional animation gave impetus to the development of every other types of animation all of which we will talk
+                     about in this article.<br><br></p>
+
+                  <p><b>Traditional animation</b> (or classical animation, cel animation, hand-drawn animation) is an animation
+                                 technique in which each frame is drawn by hand. The technique was the dominant form of animation in
+                                  cinema until the advent of computer animation.<br><br>
+                            <h5>Pencil test</h5><br>
+                                <p>After all the drawings are cleaned up, they are then photographed on an animation camera, usually on 
+                                black and white film stock. Nowadays, pencil tests can be made using a video camera and computer software.</p>
+
+                                <br>
+                                <h5>Backgrounds</h5><br>
+                                <p>While the animation is being done, the background artists will paint the sets over which the action of 
+                                each animated sequence will take place. These backgrounds are generally done in gouache or acrylic paint,
+                                 although some animated productions have used backgrounds done in watercolor or oil paint. Background 
+                                 artists follow very closely the work of the background layout artists and color stylists 
+                                 (which is usually compiled into a workbook for their use) so that the resulting backgrounds are 
+                                 harmonious in tone with the character designs.</p>
+                                 <br>
+            </div>
+	<script src='../other/script/script.js'></script>
+
+    </body>
+</html>

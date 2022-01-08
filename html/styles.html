@@ -12,11 +12,11 @@
         <title>Animation Styles</title>
         <style>  
         body { 
-        background: url(https://eskipaper.com/images/simple-digital-backgrounds-1.jpg) no-repeat center fixed; 
+        background: url('../images/bufi.jpg') no-repeat center fixed; 
         background-size: cover;
         }
            .nav-bar{
-                position: static;
+                position: fixed;
                 transform: translateY(0%);
             }
             #studios_content{
@@ -34,9 +34,10 @@
             list-style-type: none;
         }
       
-        h1 {
+        h3 {
             color:black;
-            padding-bottom: 5%;
+            padding-top: 30px;
+            padding-bottom: 30px;
             font-size: 24;
         }
             p {
@@ -47,12 +48,12 @@
 
 .sidenav {
   height: 100%;
-  width: 160px;
+  width: 200px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #364b60;
   overflow-x: hidden;
   padding-top: 20px;
   margin-top: 7vh;
@@ -62,7 +63,7 @@
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #FFF;
   display: block;
 }
 
@@ -71,9 +72,10 @@
 }
 
 .main {
-  margin-left: 160px; /* Same as the width of the sidenav */
+  margin-left: 200px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+  margin-top: 5%;
+  padding: 0px 50px;
 }
         </style>
     </head>
@@ -84,39 +86,39 @@
 			<div class='main-icon'><a href='#'>CARTOONS</a></div>
 
 			<div class='nav-left'>
-				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_0', 'nav_finger_0')" onmouseleave="leaveNavItem('nav_a_0', 'nav_finger_0')" onclick="jumpToPanel('nav_a_0')"><img src="images/pointer.png" class="nav-finger" id="nav_finger_0"><a href='#historyPanel' id="nav_a_0">History</a></div>
-				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_1', 'nav_finger_1')" onmouseleave="leaveNavItem('nav_a_1', 'nav_finger_1')" onclick="jumpToPanel('nav_a_1')"><img src="images/pointer.png" class="nav-finger" id="nav_finger_1"><a href='#stylesPanel' id="nav_a_1">Styles</a></div>
-				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_2', 'nav_finger_2')" onmouseleave="leaveNavItem('nav_a_2', 'nav_finger_2')" onclick="jumpToPanel('nav_a_2')"><img src="images/pointer.png" class="nav-finger" id="nav_finger_2"><a href='#studiosPanel' id="nav_a_2">Studios</a></div>
-				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_3', 'nav_finger_3')" onmouseleave="leaveNavItem('nav_a_3', 'nav_finger_3')" onclick="jumpToPanel('nav_a_3')"><img src="images/pointer.png" class="nav-finger" id="nav_finger_3"><a href='#principalsPanel' id="nav_a_3" style="margin-left: 12px;">Principles</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_0', 'nav_finger_0')" onmouseleave="leaveNavItem('nav_a_0', 'nav_finger_0')" onclick="jumpToPanel('nav_a_0')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_0"><a href='../html//history.html' id="nav_a_0">History</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_1', 'nav_finger_1')" onmouseleave="leaveNavItem('nav_a_1', 'nav_finger_1')" onclick="jumpToPanel('nav_a_1')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_1"><a href='../html/styles.html' id="nav_a_1">Styles</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_2', 'nav_finger_2')" onmouseleave="leaveNavItem('nav_a_2', 'nav_finger_2')" onclick="jumpToPanel('nav_a_2')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_2"><a href='../html/studios.html' id="nav_a_2">Studios</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_3', 'nav_finger_3')" onmouseleave="leaveNavItem('nav_a_3', 'nav_finger_3')" onclick="jumpToPanel('nav_a_3')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_3"><a href='#principalsPanel' id="nav_a_3" style="margin-left: 12px;">Principles</a></div>
 			</div>
 
 			<div class='nav-right'>
-				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_4', 'nav_finger_4')" onmouseleave="leaveNavItem('nav_a_4', 'nav_finger_4')" onclick="jumpToPanel('nav_a_4')"><img src="images/pointer.png" class="nav-finger" id="nav_finger_4"><a id="nav_a_4" href='html/about.html'>About</a></div>
-				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_5', 'nav_finger_5')" onmouseleave="leaveNavItem('nav_a_5', 'nav_finger_5')" onclick="jumpToPanel('nav_a_5')"><img src="images/pointer.png" class="nav-finger" id="nav_finger_5"><a id="nav_a_5" href='html/login.html'>Log In</a></div>
-				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_6', 'nav_finger_6')" onmouseleave="leaveNavItem('nav_a_6', 'nav_finger_6')" onclick="jumpToPanel('nav_a_6')"><img src="images/pointer.png" class="nav-finger" id="nav_finger_6"><a id="nav_a_6" href='#'>Sign up</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_4', 'nav_finger_4')" onmouseleave="leaveNavItem('nav_a_4', 'nav_finger_4')" onclick="jumpToPanel('nav_a_4')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_4"><a id="nav_a_4" href='../html/about.html'>About</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_5', 'nav_finger_5')" onmouseleave="leaveNavItem('nav_a_5', 'nav_finger_5')" onclick="jumpToPanel('nav_a_5')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_5"><a id="nav_a_5" href='../html/login.html'>Log In</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_6', 'nav_finger_6')" onmouseleave="leaveNavItem('nav_a_6', 'nav_finger_6')" onclick="jumpToPanel('nav_a_6')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_6"><a id="nav_a_6" href='#'>Sign up</a></div>
 			</div>
 		</nav>
         <!-- sidebar -->
         <div class="sidenav">
-            <a href="#traditional">Traditional</a>
-            <a href="#twoDimensional">Two Dimensional</a>
-            <a href="#threeDimensional">Three Dimensional</a>
-            <a href="#manga">Manga</a>
-            <a href="#rotoscope">Rotoscope</a>
+            <a href="../stylesPage/traditional.html">Traditional</a>
+            <a href="../stylesPage/dimensionaltwo.html">Two Dimensional</a>
+            <a href="../stylesPage/dimensionalthree.html">Three Dimensional</a>
+            <a href="../stylesPage/manga.html">Manga</a>
+            <a href="../stylesPage/rotoscope.html">Rotoscope</a>
         </div>
     
             <!---<div style="background-image:url('https://www.yukfoo.net/data/catalogue/items/ICEdewlineupalex_1271x635.jpg');"></div>;--->
 
             <div id = "content" class="main">
-                <h1>Animation Styles</h1>
+                <h3>Animation Styles</h3>
                 <p><b>Animation</b> is a method in which figures are manipulated to appear as moving images. In traditional animation,
                      images are drawn or painted by hand on transparent celluloid sheets to be photographed and exhibited on film.
                      Today, most animations are made with computer-generated imagery. Computer animation can be very detailed 3D 
                      animation, while 2D computer animation can be used for stylistic reasons, low bandwidth, or faster real-time 
                      renderings. Other common animation methods apply a stop motion technique to two and three-dimensional objects 
-                     like paper cutouts, puppets, or clay figures.</p> <br><br>
+                     like paper cutouts, puppets, or clay figures.<br><br></p>
                 
-                <P><b>Traditional animation</b> first appeared more than 140 years ago in 1877, when Emil Reynaud showed the world an apparatus for 
+                <p><b>Traditional animation</b> first appeared more than 140 years ago in 1877, when Emil Reynaud showed the world an apparatus for 
                     demonstrating moving drawings.
                     As the name now suggests, traditional animation means creating each frame manually using a pencil and a piece of paper.
                      Of course, this is a very time-consuming process, but now there are special programs that exponentially simplify the task.
@@ -124,7 +126,7 @@
         
                     Sometimes you'll hear the opinion that traditional animation is dead, but this is not entirely true. 
                     Traditional animation gave impetus to the development of every other types of animation all of which we will talk
-                     about in this article.<br><br></P>
+                     about in this article.<br><br></p>
                    
                     
             
