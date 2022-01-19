@@ -353,7 +353,7 @@ nav a:hover {
 .sidebar {
     float: left;
 	position: fixed;
-    top: 0px;
+    top: -50px;
     transform: translate(0%, 50%);
     left: 0px;
 	background: transparent;
@@ -368,8 +368,8 @@ nav a:hover {
 .sidebar ul li {
 	position: relative;
     top: 30%;
-    width: 85px;
-    height: 90px;
+    width: 70px;
+    height: 80px;
     cursor: pointer;
 	background: #2D3E50;
 	text-transform: uppercase;
@@ -381,21 +381,21 @@ nav a:hover {
 	background: white;
 	color: crimson;
 	top:0;
-	left: 85px
-	width: 85px; height: 100%;
+	left: 70px
+	width: 70px; height: 100%;
     opacity:.5;
-    /*transform: perspective(400px) rotateY(90deg);
+    transform: perspective(400px) rotateY(90deg);
 	transform-origin: 0 100%;
-	transition:all .4s ease-out;*/
+	transition:all .4s ease-out;
 }
 
 .sidebar ul li:hover {
-    transform: translateX(-85px);
+    transform: translateX(-70px);
 }
 
 .sidebar ul li:hover:after {
     opacity: 1;
-	/*transform: perspective(400px) rotateY(0deg) scale(1) ;*/
+	transform: perspective(400px) rotateY(0deg) scale(1) ;
 }
 .sidebar ul li div { 
     position: relative; 
@@ -404,22 +404,22 @@ nav a:hover {
 /*Images and gifs*/
 #disney, #dreamworks{
     padding-top: 25%;
-    width: 85px;
+    width: 70px;
     height: auto;
 }
 #warnerbros{
     padding-top: 10px;
-    width: 85px;
+    width: 70px;
     height: auto;
 }
 #ghibli{
-    padding-top: 22px;
-    width: 85px;
+    padding-top: 15.5px;
+    width: 70px;
     height: auto;
 }
 #pixar{
-    padding-top: 40px;
-    width: 85px;
+    padding-top: 30px;
+    width: 70px;
     height: auto;
 }
 #disney_gif {
@@ -491,12 +491,11 @@ nav a:hover {
 /*Studios Content CSS*/
 .studio_content{
     position: absolute;
-    height: 525px;
-    width: 1300px;
+    height: 280px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 6;
+    z-index: 2;
     overflow-y: scroll;
     /*scrollbar for mozilla*/
     scrollbar-color: rgb(7, 60, 164) darkgrey;
@@ -504,19 +503,15 @@ nav a:hover {
 }
 .studio_content p{
     color: white;
-    /*-webkit-text-stroke-width: 1px;*/
-    text-shadow: 3.5px 3.5px black;
-    /*-webkit-text-fill-color: white;*/
-    font-size: 20px;
 }
 
 /*Glass Content Background*/
 .kontainer{
     position: absolute;
-    top: 30%;
+    top: 170px;
     right: 50%;
-    width: 1500px;
-    height: 650px;
+    width: 800px;
+    height: 375px;
     margin: 200px auto;
     transform: translate(50%,-50%);
 }
@@ -625,9 +620,9 @@ nav a:hover {
 /*Studios Footer*/
 .studios_footer{
     position: relative;
-    top: 100%;
+    top: 750px;
     right: 0px;
     width: 100%;
-    height: 140px; 
+    height: 120px; 
     background-color: #2D3E50;
 }
