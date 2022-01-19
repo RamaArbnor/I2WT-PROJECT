@@ -13,7 +13,7 @@ function showNav(){
 	}
 }
 
-// Dim as user scrolls
+// Dim as user scrolls [[ CANCELED IDEA ]]
 // window.addEventListener('scroll', () => {
 // 	// console.log(montage.style.opacity)
 // 	// console.log(montage.style.opacity)
@@ -94,7 +94,6 @@ function slidePanel(id, btn_id, slide_id) {
 	let panel = document.getElementById(id)
 	let btn = document.getElementById(btn_id)
 	let slide = document.getElementById(slide_id)
-	// let content = document.querySelectorAll('#' + id + ' .right, #' + id + ' .left')
 
 	slide.style.transform = 'translate(50%, -100%)'
 	setTimeout(() => {

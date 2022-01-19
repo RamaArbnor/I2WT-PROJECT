@@ -619,10 +619,10 @@ nav a:hover {
 }
 /*Studios Footer*/
 .studios_footer{
-    position: relative;
-    top: 750px;
+    position: absolute;
+    top: 100%;
     right: 0px;
     width: 100%;
-    height: 120px; 
+    height: 140px; 
     background-color: #2D3E50;
 }
