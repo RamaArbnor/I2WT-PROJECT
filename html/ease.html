@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel='stylesheet' type='text/css' href='../other/styles/style.css'>
+	<link rel='stylesheet' type='text/css' href='../other/styles/principles.css'>
+	<title>The 12 Principles of Animation</title>
+	
+	<style type="text/css">
+		.content{
+			align-items: auto;
+			position: relative;
+			width: 90%;
+			/*margin-left: auto;*/
+			margin-right: 0px;
+			padding-top: 120px;
+			padding-bottom: 80px;
+			/*background-color: aqua;*/
+		}
+	</style>
+</head>
+<body onscroll="showArrow()">
+	<nav id='nav_bar' class='nav-bar'>
+		<div class='main-icon'><a href='../index.html'>CARTOONS</a></div>
+
+		<div class='nav-left'>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_0', 'nav_finger_0')" onmouseleave="leaveNavItem('nav_a_0', 'nav_finger_0')" onclick="jumpToPanel('nav_a_0')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_0"><a href='history.html' id="nav_a_0">History</a></div>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_1', 'nav_finger_1')" onmouseleave="leaveNavItem('nav_a_1', 'nav_finger_1')" onclick="jumpToPanel('nav_a_1')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_1"><a href='styles.html' id="nav_a_1">Styles</a></div>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_2', 'nav_finger_2')" onmouseleave="leaveNavItem('nav_a_2', 'nav_finger_2')" onclick="jumpToPanel('nav_a_2')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_2"><a href='studios.html' id="nav_a_2">Studios</a></div>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_3', 'nav_finger_3')" onmouseleave="leaveNavItem('nav_a_3', 'nav_finger_3')" onclick="jumpToPanel('nav_a_3')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_3"><a href='principles.html' id="nav_a_3" style="margin-left: 12px;">Principles</a></div>
+		</div>
+
+		<div class='nav-right'>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_4', 'nav_finger_4')" onmouseleave="leaveNavItem('nav_a_4', 'nav_finger_4')" onclick="jumpToPanel('nav_a_4')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_4"><a id="nav_a_4" href='about.html'>About</a></div>
+		</div>
+	</nav>
+
+	<div class="sidebar-principles">
+		<a class="side-item" style="background-color: #F5E35D;" href="squash.html">Squash & Stretch</a>
+		<a class="side-item" style="background-color: #00ff7f;" href="anticipation.html">Anticipation</a>
+		<a class="side-item" style="background-color: #81C9B7;" href="staging.html">Staging</a>
+		<a class="side-item" style="background-color: #98BEE5;" href="methods.html">Straight Ahead <br>& Pose to Pose</a>
+		<a class="side-item" style="background-color: #E6A4B5;" href="follow.html">Follow Through & Overlapping Action</a>
+		<a class="side-item" style="background-color: #EA8384; border-radius: 0px 12px 12px 0px; transform: translateX(30%);">Slow In & Slow Out</a>
+		<a class="side-item" style="background-color: #EFAE3D;" href="arc.html">Arc</a>
+		<a class="side-item" style="background-color: #bbc47b;" href="secondary.html">Secondary Action</a>
+		<a class="side-item" style="background-color: #519687;" href="timing.html">Timing</a>
+		<a class="side-item" style="background-color: #234AA6;" href="exaggeration.html">Exaggeration</a>
+		<a class="side-item" style="background-color: #CE2493;" href="solid.html">Solid Drawing</a>
+		<a class="side-item" style="background-color: #EF3E54;" href="appeal.html">Appeal</a>
+	</div>
+
+	<div class="content">
+		<div>
+			<h2>Slow In and Slow Out</h2>
+			
+			<p class="content-par">On a basic level, Slow In and Slow Out describes the tendency of things to come to rest, or to start moving, in a progressive way. This is a principle that most people understand pretty quickly, as it’s easy to observe in life. More technically, this principle tells us that when we animate something moving from a stop, the spacing of that object needs to progressively increase (widen) until it gets up to speed, at which point the spacing becomes relatively constant. And when that object comes back to rest, the spacing progressively decreases to zero.</p>
+			<img src="../images/ease.png" style="margin-top: 30px; margin-bottom: 30px; width: 400px;">
+		</div>
+
+		<div style="background-color: whitesmoke; margin-top: 30px; padding-top: 30px;">
+			<p class="content-par">Savvy animators came to realize that objects accelerate when they start to move and therefore they needed more drawings there. This became known as a slow out, because the extra drawings slowed the action down at the beginning of the movement, just like in real life. Conversely, the gradual reduction in speed when coming to a stop, again portrayed by extra drawings, became known as slow in. By varying the number of in-betweens, the nature of the slow in or slow out is made more gradual or more rapid.</p>
+			<img src="../images/ease_chart.jpg" style="margin-top: 0px; margin-bottom: 40px; width: 500px;">
+			<p class="content-par">Here are three spacing charts that all show a slow out from the key pose at frame 1 and a slow in to the key pose at frame 17. In the first, the slow in and slow out are symmetrical and even. In the second, the slow out is a bit slower than the slow in. The third illustrates a very gradual slow out, and a very rapid slow in.</p>
+		</div>
+
+		<div style="margin-top: 30px; padding-top: 30px;">
+			<iframe width="720" height="405" src="https://www.youtube.com/embed/fQBFsTqbKhY" frameborder="none" style="margin-top: 20px; margin-bottom: 80px; box-shadow: 2px 2px 10px;"></iframe>
+			<p class="content-par">Spacing is a term that comes from the days of animating on paper. It’s slang for movement from frame to frame. Put a few sequential animation drawings on the pegs, turn on the bottom lights, and you’ll see the drawings superimposed on each other. The space between analogous parts of the drawings shows the movement. Big spacing changes between drawings means large movements.</p>
+		</div>
+
+		<div class="connector">
+			<a id="prev" class="prev" href="follow.html" >Previous Principle</a>
+			<a id="next" class="next" href="arc.html" >Next Principle</a>
+		</div>
+	</div>
+
+	<a class="to-top" id="to_top" href="#">^</a>
+
+	<script src='../other/script/script.js'></script>
+	<script src='../other/script/principles.js'></script>
+</body>
+</html>

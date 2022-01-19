@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel='stylesheet' type='text/css' href='../other/styles/style.css'>
+	<link rel='stylesheet' type='text/css' href='../other/styles/principles.css'>
+	<title>The 12 Principles of Animation</title>
+	
+	<style type="text/css">
+		.content{
+			align-items: auto;
+			position: relative;
+			width: 90%;
+			/*margin-left: auto;*/
+			margin-right: 0px;
+			padding-top: 120px;
+			padding-bottom: 80px;
+			/*background-color: aqua;*/
+		}
+	</style>
+</head>
+<body onscroll="showArrow()">
+	<nav id='nav_bar' class='nav-bar'>
+		<div class='main-icon'><a href='../index.html'>CARTOONS</a></div>
+
+		<div class='nav-left'>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_0', 'nav_finger_0')" onmouseleave="leaveNavItem('nav_a_0', 'nav_finger_0')" onclick="jumpToPanel('nav_a_0')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_0"><a href='history.html' id="nav_a_0">History</a></div>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_1', 'nav_finger_1')" onmouseleave="leaveNavItem('nav_a_1', 'nav_finger_1')" onclick="jumpToPanel('nav_a_1')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_1"><a href='styles.html' id="nav_a_1">Styles</a></div>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_2', 'nav_finger_2')" onmouseleave="leaveNavItem('nav_a_2', 'nav_finger_2')" onclick="jumpToPanel('nav_a_2')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_2"><a href='studios.html' id="nav_a_2">Studios</a></div>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_3', 'nav_finger_3')" onmouseleave="leaveNavItem('nav_a_3', 'nav_finger_3')" onclick="jumpToPanel('nav_a_3')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_3"><a href='principles.html' id="nav_a_3" style="margin-left: 12px;">Principles</a></div>
+		</div>
+
+		<div class='nav-right'>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_4', 'nav_finger_4')" onmouseleave="leaveNavItem('nav_a_4', 'nav_finger_4')" onclick="jumpToPanel('nav_a_4')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_4"><a id="nav_a_4" href='about.html'>About</a></div>
+		</div>
+	</nav>
+
+	<div class="sidebar-principles">
+		<a class="side-item" style="background-color: #F5E35D;" href="squash.html">Squash & Stretch</a>
+		<a class="side-item" style="background-color: #00ff7f;" href="anticipation.html">Anticipation</a>
+		<a class="side-item" style="background-color: #81C9B7;" href="staging.html">Staging</a>
+		<a class="side-item" style="background-color: #98BEE5;" href="methods.html">Straight Ahead <br>& Pose to Pose</a>
+		<a class="side-item" style="background-color: #E6A4B5;" href="follow.html">Follow Through & Overlapping Action</a>
+		<a class="side-item" style="background-color: #EA8384;" href="ease.html">Slow In & Slow Out</a>
+		<a class="side-item" style="background-color: #EFAE3D; border-radius: 0px 12px 12px 0px; transform: translateX(30%);">Arc</a>
+		<a class="side-item" style="background-color: #bbc47b;" href="secondary.html">Secondary Action</a>
+		<a class="side-item" style="background-color: #519687;" href="timing.html">Timing</a>
+		<a class="side-item" style="background-color: #234AA6;" href="exaggeration.html">Exaggeration</a>
+		<a class="side-item" style="background-color: #CE2493;" href="solid.html">Solid Drawing</a>
+		<a class="side-item" style="background-color: #EF3E54;" href="appeal.html">Appeal</a>
+	</div>
+
+	<div class="content">
+		<div>
+			<h2>Arcs</h2>
+			
+			<p class="content-par">The visual path of an object or action is called an “arc”. This could be the projectile of a bouncing ball, the path of a moving arm, and even the movements of mouth corners during a dialogue scene.</p>
+			<iframe width="720" height="405" src="https://www.youtube.com/embed/I1_tZ9LhJD4" frameborder="none" style="margin-top: 20px; margin-bottom: 80px; box-shadow: 2px 2px 10px;"></iframe>
+		</div>
+
+		<div style="background-color: whitesmoke; margin-top: 30px; padding-top: 30px;">
+			<p class="content-par">The arc is one of the most important tools to make movements realistic and pleasing to the eye. Due to the moving object’s inertia, its path should be smooth unless it’s being interrupted by an external force (e.g. impact). A smooth arc, like a dancer’s movement, is always eye pleasing. On the other hand, an unintended broken arc can reduce the believability of the movement.</p>
+			<img src="../images/arc_life.jpg" style="margin-bottom: 30px;">
+			<p class="content-par">Arcs are usually circular. Circular arc makes the movement organic. On the other hand, linear or angular arcs can be used for mechanical movement. It really depends on the desired effect. A straight arc gives the movement more power.</p>
+		</div>
+
+		<div style="margin-top: 30px; padding-top: 30px;">
+			<img src="../images/arc_weight.jpg" style="margin-bottom: 30px;">
+			<p class="content-par">When lifting an object, the path of a lighter object tends to be outward but the heavy one moves closer to the lifter’s body. The audience gets a sense of the object/action simply by recognizing its arc.</p>
+		</div>
+
+		<div class="connector">
+			<a id="prev" class="prev" href="ease.html" >Previous Principle</a>
+			<a id="next" class="next" href="secondary.html" >Next Principle</a>
+		</div>
+	</div>
+
+	<a class="to-top" id="to_top" href="#">^</a>
+
+	<script src='../other/script/script.js'></script>
+	<script src='../other/script/principles.js'></script>
+</body>
+</html>

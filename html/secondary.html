@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel='stylesheet' type='text/css' href='../other/styles/style.css'>
+	<link rel='stylesheet' type='text/css' href='../other/styles/principles.css'>
+	<title>The 12 Principles of Animation</title>
+	
+	<style type="text/css">
+		.content{
+			align-items: auto;
+			position: relative;
+			width: 90%;
+			/*margin-left: auto;*/
+			margin-right: 0px;
+			padding-top: 120px;
+			padding-bottom: 80px;
+			/*background-color: aqua;*/
+		}
+	</style>
+</head>
+<body onscroll="showArrow()">
+	<nav id='nav_bar' class='nav-bar'>
+		<div class='main-icon'><a href='../index.html'>CARTOONS</a></div>
+
+		<div class='nav-left'>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_0', 'nav_finger_0')" onmouseleave="leaveNavItem('nav_a_0', 'nav_finger_0')" onclick="jumpToPanel('nav_a_0')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_0"><a href='history.html' id="nav_a_0">History</a></div>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_1', 'nav_finger_1')" onmouseleave="leaveNavItem('nav_a_1', 'nav_finger_1')" onclick="jumpToPanel('nav_a_1')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_1"><a href='styles.html' id="nav_a_1">Styles</a></div>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_2', 'nav_finger_2')" onmouseleave="leaveNavItem('nav_a_2', 'nav_finger_2')" onclick="jumpToPanel('nav_a_2')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_2"><a href='studios.html' id="nav_a_2">Studios</a></div>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_3', 'nav_finger_3')" onmouseleave="leaveNavItem('nav_a_3', 'nav_finger_3')" onclick="jumpToPanel('nav_a_3')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_3"><a href='principles.html' id="nav_a_3" style="margin-left: 12px;">Principles</a></div>
+		</div>
+
+		<div class='nav-right'>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_4', 'nav_finger_4')" onmouseleave="leaveNavItem('nav_a_4', 'nav_finger_4')" onclick="jumpToPanel('nav_a_4')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_4"><a id="nav_a_4" href='about.html'>About</a></div>
+		</div>
+	</nav>
+
+	<div class="sidebar-principles">
+		<a class="side-item" style="background-color: #F5E35D;" href="squash.html">Squash & Stretch</a>
+		<a class="side-item" style="background-color: #00ff7f;" href="anticipation.html">Anticipation</a>
+		<a class="side-item" style="background-color: #81C9B7;" href="staging.html">Staging</a>
+		<a class="side-item" style="background-color: #98BEE5;" href="methods.html">Straight Ahead <br>& Pose to Pose</a>
+		<a class="side-item" style="background-color: #E6A4B5;" href="follow.html">Follow Through & Overlapping Action</a>
+		<a class="side-item" style="background-color: #EA8384;" href="ease.html">Slow In & Slow Out</a>
+		<a class="side-item" style="background-color: #EFAE3D;" href="arc.html">Arc</a>
+		<a class="side-item" style="background-color: #bbc47b; border-radius: 0px 12px 12px 0px; transform: translateX(30%);">Secondary Action</a>
+		<a class="side-item" style="background-color: #519687;" href="timing.html">Timing</a>
+		<a class="side-item" style="background-color: #234AA6;" href="exaggeration.html">Exaggeration</a>
+		<a class="side-item" style="background-color: #CE2493;" href="solid.html">Solid Drawing</a>
+		<a class="side-item" style="background-color: #EF3E54;" href="appeal.html">Appeal</a>
+	</div>
+
+	<div class="content">
+		<div>
+			<h2>Secondary Action</h2>
+			
+			<p class="content-par">Good secondary action energizes your shots and marks the difference between being a competent animator and an entertaining visual storyteller. If you have the urge to do film animation, you must understand and embrace this principle.</p>
+			<img src="../images/secondary.jpg" style="width: 600px;">
+		</div>
+
+		<div style="background-color: whitesmoke; margin-top: 30px; padding-top: 50px;">
+			<p class="content-par">Surprisingly, it might be the most misunderstood animation principle, at least among beginning animators. Look up “Secondary Action” on the internet, and you’ll a fair amount of confusion and outright nonsense, as well as a lot of vagueness. So let’s start with some definitions.</p>
+			<iframe width="720" height="405" src="https://www.youtube.com/embed/MjBHWw1TbP4" frameborder="none" style="margin-top: 20px; margin-bottom: 80px; box-shadow: 2px 2px 10px;"></iframe>
+			<p class="content-par">What seems to confuse people about secondary action is the word “action”. Secondary action is not so much physical as it is behavioral. The primary action of a scene is the thing the scene is about. It’s the action the character is manifestly trying to accomplish; it’s the main idea the of the story at that moment. It is the text of the storytelling.</p>
+		</div>
+
+		<div style="margin-top: 30px; padding-top: 30px;">
+			<img src="../images/secondary_gif.gif" style="margin-bottom: 30px; width: 500px;">
+			<p class="content-par">Secondary action is something else the character is doing, something on top of or in addition to the primary action. It is a behavior that enlivens the scene, adds nuance and authenticity. It also reveals character, hints at back story, and so on. In the best cases, it helps provide the subtext of the storytelling.</p>
+		</div>
+
+		<div class="connector">
+			<a id="prev" class="prev" href="arc.html" >Previous Principle</a>
+			<a id="next" class="next" href="timing.html" >Next Principle</a>
+		</div>
+	</div>
+
+	<a class="to-top" id="to_top" href="#">^</a>
+
+	<script src='../other/script/script.js'></script>
+	<script src='../other/script/principles.js'></script>
+</body>
+</html>

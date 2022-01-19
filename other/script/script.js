@@ -94,14 +94,14 @@ function slidePanel(id, btn_id, slide_id) {
 	let panel = document.getElementById(id)
 	let btn = document.getElementById(btn_id)
 	let slide = document.getElementById(slide_id)
-	let content = document.querySelectorAll('#' + id + ' .right, #' + id + ' .left')
+	// let content = document.querySelectorAll('#' + id + ' .right, #' + id + ' .left')
 
 	slide.style.transform = 'translate(50%, -100%)'
 	setTimeout(() => {
 		btn.style.display = 'inline'
 	}, 300)
 
-	for (var i = 0; i < content; i++) {
-		content[i].style.filter = 'brightness(0.5)'
-	}
+	// for (var i = 0; i < content; i++) {
+	// 	content[i].style.filter = 'brightness(0.5)'
+	// }
 }

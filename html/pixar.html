@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--Gent Osmani-->
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <link rel='stylesheet' type='text/css' href='../other/styles/style.css'>
+        
+        <style>  
+            .nav-bar{
+                position: fixed;
+                transform: translateY(0%);
+            }
+            .sidebar li{
+                list-style-type: none;
+            }
+            .sidebar a{
+                width: 100%;
+                height: 100%;
+            }
+            *{
+                cursor: url(../images/wall-e.cur), auto;
+            }
+            ::-webkit-scrollbar {
+                width: 5px;
+            }
+            ::-webkit-scrollbar-track {
+                background-color: darkgrey;
+                border-radius: 5px;
+            }
+            ::-webkit-scrollbar-thumb {
+                background-color: rgb(81, 106, 134);
+                border-radius: 5px;
+            }            
+        </style>
+    </head>
+    <body>
+        <nav id='nav_bar' class='nav-bar'>
+			<div class='main-icon'><a href='../index.html'>CARTOONS</a></div>
+
+			<div class='nav-left'>
+                <div class='nav-cat' onmouseenter="hoverNavItem('nav_a_0', 'nav_finger_0')" onmouseleave="leaveNavItem('nav_a_0', 'nav_finger_0')" onclick="jumpToPanel('nav_a_0')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_0"><a href='history.html' id="nav_a_0">History</a></div>
+                <div class='nav-cat' onmouseenter="hoverNavItem('nav_a_1', 'nav_finger_1')" onmouseleave="leaveNavItem('nav_a_1', 'nav_finger_1')" onclick="jumpToPanel('nav_a_1')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_1"><a href='styles.html' id="nav_a_1">Styles</a></div>
+                <div class='nav-cat' onmouseenter="hoverNavItem('nav_a_2', 'nav_finger_2')" onmouseleave="leaveNavItem('nav_a_2', 'nav_finger_2')" onclick="jumpToPanel('nav_a_2')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_2"><a href='studios.html' id="nav_a_2">Studios</a></div>
+                <div class='nav-cat' onmouseenter="hoverNavItem('nav_a_3', 'nav_finger_3')" onmouseleave="leaveNavItem('nav_a_3', 'nav_finger_3')" onclick="jumpToPanel('nav_a_3')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_3"><a href='principles.html' id="nav_a_3" style="margin-left: 12px;">Principles</a></div>
+            </div>
+
+            <div class='nav-right'>
+                <div class='nav-cat' onmouseenter="hoverNavItem('nav_a_4', 'nav_finger_4')" onmouseleave="leaveNavItem('nav_a_4', 'nav_finger_4')" onclick="jumpToPanel('nav_a_4')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_4"><a id="nav_a_4" href='about.html'>About</a></div>
+            </div>
+		</nav>
+        <nav class = "sidebar">
+            <ul>
+                <a href="disney.html"><li onmouseenter='rotateGif("disney_gif")' onmouseleave = 'defaultGif("disney_gif")'>
+                    <a href="disney.html"><img id="disney" src="../images/Disney+_logo.svg.webp"></a>
+                    <a href="disney.html"><img id='disney_gif' src="../images/1qJI.gif"></a>
+                </li></a>
+                <a href="dreamworks.html"><li onmouseenter='rotateGif("dreamworks_gif")' onmouseleave =   'defaultGif("dreamworks_gif")'>
+                    <a href="dreamworks.html"><img id="dreamworks" src="../images/DreamWorks-Animation-Logo.png"></a>
+                    <a href="dreamworks.html"><img id="dreamworks_gif"src="../images/dreamworks.gif"></a>
+        
+                </li></a>
+               <a href="warnerbros.html"> <li onmouseenter='rotateGif("warnerbros_gif")' onmouseleave = 'defaultGif("warnerbros_gif")'>
+                    <img id="warnerbros" src="../images/Warner_Bros._(2019)_logo.svg (1).png">
+                    <img id="warnerbros_gif"src="../images/giphy.gif">
+                </li></a>
+               <a href="pixar.html"> <li onmouseenter='rotateGif("pixar_gif")' onmouseleave = 'defaultGif("pixar_gif")'>
+                    <img id="pixar" src = "../images/1.png">
+                    <img id="pixar_gif"src="../images/4a2a5da8509e10042926f06bf93f32cb.gif">
+                </li></a>
+                <a href="studio_ghibli.html"><li onmouseenter='rotateGif("ghibli_gif")' onmouseleave = 'defaultGif("ghibli_gif")'>
+                    <img id="ghibli" src="../images/Studio_Ghibli_logo.png">
+                    <img id="ghibli_gif" src='../images/anime-studio-ghibli.gif'>
+                </li></a>
+            </ul>
+        </nav>
+        <img class ="background_image" src="../images/pixar2.png">
+        <div class = "kontainer glass">
+            
+        </div>
+        <div class = "studio_content">            
+            <p>Pixar Animation Studios (/ˈpɪksɑːr/), commonly known as just Pixar, is an American computer animation studio known for its critically and commercially successful computer animated feature films. It is based in Emeryville, California, and is a subsidiary of Walt Disney Studios, which is owned by The Walt Disney Company.</p><br>
+
+            <p>Pixar began in 1979 as part of the Lucasfilm computer division, known as the Graphics Group, before its spin-off as a corporation in 1986, with funding from Apple co-founder Steve Jobs, who became its majority shareholder. Disney purchased Pixar in 2006 at a valuation of $7.4+ billion by converting each share of Pixar stock to 2.3 shares of Disney stock. Pixar is best known for its feature films, technologically powered by RenderMan, the company's own implementation of the industry-standard RenderMan Interface Specification image-rendering application programming interface. Luxo Jr., a desk lamp from the studio's 1986 short film of the same name, is the studio's mascot.</p><br>
+
+            <p>Pixar has produced 24 feature films, beginning with Toy Story (1995), which is the first fully computer-animated feature film; its most recent film was Luca (2021). Aside from Soul (2020) and Luca, which did not receive theatrical releases and instead debuted on Disney+, they have all had CinemaScore ratings of at least an "A−", which indicates a positive reception with audiences. The studio has also produced many short films. As of July 2019, its feature films have earned approximately $14 billion at the worldwide box office, with an average worldwide gross of $680 million per film. Toy Story 3 (2010), Finding Dory (2016), Incredibles 2 (2018), and Toy Story 4 (2019) are all among the 50 highest-grossing films of all time, with Incredibles 2 being the fourth highest-grossing animated film of all time, with a gross of $1.2 billion; the other three also grossed over $1 billion. Moreover, 15 of Pixar's films are in the 50 highest-grossing animated films of all time.</p><br>
+
+            <p>The studio has earned 23 Academy Awards, 10 Golden Globe Awards, and 11 Grammy Awards, along with numerous other awards and acknowledgments. Many of Pixar's films have been nominated for the Academy Award for Best Animated Feature, since its inauguration in 2001, with eleven winners being Finding Nemo (2003), The Incredibles (2004), Ratatouille (2007), WALL-E (2008), Up (2009), Toy Story 3 (2010), Brave (2012), Inside Out (2015), Coco (2017), Toy Story 4 (2019), and Soul (2020); the four nominated without winning are Monsters, Inc. (2001), Cars (2006), Incredibles 2 (2018), and Onward (2020). Up and Toy Story 3 were also nominated for the more competitive and inclusive Academy Award for Best Picture.</p><br>
+
+            <p>On September 6, 2009, Pixar executives John Lasseter, Brad Bird, Pete Docter, Andrew Stanton, and Lee Unkrich were presented with the Golden Lion award for Lifetime Achievement by the Venice Film Festival. The physical award was ceremoniously handed to Lucasfilm's founder, George Lucas.</p><br>
+        </div>
+        <div class="studios_footer">
+            <ul>
+                <ul class="column">
+                    <a href="">Arbnor</a>
+                    <a href="">Ylber</a>				
+                </ul>
+                <ul class="column">
+                    <a href="">Edon</a>
+                    <a href="">Anduena</a>								
+                </ul>
+                <ul class="column">
+                    <a href="">Gent</a>
+                    <a href="">Referenceszzzz</a>							
+                </ul>
+            </ul>
+        </div> 
+        <script src ="../other/script/script.js"></script>
+        <script type="text/javascript">
+            var disgif = document.getElementById('disney_gif')
+            var wbgif = document.getElementById('warnerbros_gif')
+            var dwgif = document.getElementById('dreamworks_gif')
+            var pxgif = document.getElementById('pixar_gif')
+            var ghgif = document.getElementById('ghibli_gif')
+    
+            function rotateGif(id) {
+                var disgif = document.getElementById(id)
+                disgif.style.transform = 'perspective(400px) rotateY(0deg)'
+            }
+            function defaultGif(id) {
+                var disgif = document.getElementById(id)
+                disgif.style.transform = 'perspective(400px) rotateY(90deg)'
+            }
+        </script>
+    </body>
+</html>

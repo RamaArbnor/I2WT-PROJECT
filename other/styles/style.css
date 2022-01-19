@@ -1,3 +1,7 @@
+/*********************************************************************************************************************************/
+/***************************************************** ARBNOR ********************************************************************/
+/*********************************************************************************************************************************/
+
 @font-face {
 	src: url(../fonts/MilkyNice.ttf);
 	font-family: milk;
@@ -6,11 +10,6 @@
 html {
   scroll-behavior: smooth;
 }	
-
-/* body {
-	cursor: url(http://www.rw-designer.com/cursor-extern.php?id=58768), auto;
-} */
-
 
 * {
 	margin: 0;
@@ -23,6 +22,7 @@ html {
 /* BODY */
 body {
 	background-color: black;
+	overflow-x: hidden;
 }
 body::-webkit-scrollbar{
 	display: none;
@@ -30,6 +30,7 @@ body::-webkit-scrollbar{
 
 /* NAVIGATION */
 .nav-bar {
+	user-select: none;
 	position: fixed;
 	top: 0px;
 	left: 0px;
@@ -38,10 +39,10 @@ body::-webkit-scrollbar{
 	/*display: flex;*/
 	/*align-items: center;*/
 	background-color: #2D3E50;
+	border-bottom: 1px solid;
 	z-index: 9;
 	transform: translateY(-100%);
 	transition: transform 0.5s ease;
-	user-select: none;
 }
 .shown {
 	transform: translateY(0%);
@@ -61,7 +62,6 @@ body::-webkit-scrollbar{
 	color: #2b00ff;
 }
 
-
 .nav-left {
 	width: 40%;
 	height: inherit;
@@ -74,11 +74,11 @@ body::-webkit-scrollbar{
 }
 
 .nav-right {
-	width: 25%;
+	width: 10%;
 	height: inherit;
 	display: grid;
 	grid-auto-flow: column;
-	grid-auto-columns: 33%;
+	grid-auto-columns: 100%;
 	align-items: center;
 	float: right;
 	/*background-color: green;*/
@@ -187,6 +187,8 @@ nav a:hover {
 	width: 100%;
 	height: 680px;
 	background-color: white;
+
+	
 }
 .left{
 	text-align: center;
@@ -222,6 +224,7 @@ nav a:hover {
 	font-size: 32px;
 	border: 5px solid #2D3E50;
 	border-radius: 50px;
+	text-decoration: none;
 }
 
 .panel h1{
@@ -299,7 +302,14 @@ nav a:hover {
 .column a:hover {
 	color: darkgrey;
 }
-
+.btn-read:hover {
+	transition: 0.5s;
+	background-color: #2D3E50;
+	color: whitesmoke;
+}
+/*********************************************************************************************************************************/
+/***************************************************** GENT OSMANI ***************************************************************/
+/*********************************************************************************************************************************/
 
 /* About Page Css */
 .content-about {
@@ -315,7 +325,6 @@ nav a:hover {
 	margin-right: auto;
 	/* padding-top: 100px; */
 	height: 100%;
-	
 }
 #about-text > h1 {
 	padding-top: 80px;
@@ -334,20 +343,21 @@ nav a:hover {
 
 
 /* Sidebar */
-*,*:before,*:after {
+/**,*:before,*:after {
     box-sizing: border-box;
 }
 
 :after {
     content: "";
-}
+}*/
 .sidebar {
     float: left;
-	position: relative;
-    top: 350px;
-    transform: translate(0%,-50%);
-    left: 0;
+	position: fixed;
+    top: -50px;
+    transform: translate(0%, 50%);
+    left: 0px;
 	background: transparent;
+    z-index: 1;
 }
 
 .sidebar ul {
@@ -357,10 +367,11 @@ nav a:hover {
 
 .sidebar ul li {
 	position: relative;
+    top: 30%;
     width: 70px;
-    height: 70px;
+    height: 80px;
     cursor: pointer;
-	background: crimson;
+	background: #2D3E50;
 	text-transform: uppercase;
 	transition:all .4s ease-out;
 }
@@ -392,7 +403,7 @@ nav a:hover {
 
 /*Images and gifs*/
 #disney, #dreamworks{
-    padding-top: 15.5px;
+    padding-top: 25%;
     width: 70px;
     height: auto;
 }
@@ -470,24 +481,148 @@ nav a:hover {
 	padding: 25px 0;
 	background: transparent;
 }
-/*Studio-Content*/
-#content_background{
-    width: 500px;
-    height: 500px;
-    position: absolute;
-    top: 350px;
-    left: 500px;
-    transform: translate(0%, -50%);
-/*
-    opacity: 40%;
-    filter: blur(20px);
-*/
-    background-color: fuchsia;
-    z-index: -1;
+.background_image{
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
 }
-#studio_content{
+
+/*Studios Content CSS*/
+.studio_content{
     position: absolute;
-    top: 350px;
-    left: 550px;
-    transform: translate(0%, -50%);
+    height: 280px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    overflow-y: scroll;
+    /*scrollbar for mozilla*/
+    scrollbar-color: rgb(7, 60, 164) darkgrey;
+    scrollbar-width: thin;
+}
+.studio_content p{
+    color: white;
+}
+
+/*Glass Content Background*/
+.kontainer{
+    position: absolute;
+    top: 170px;
+    right: 50%;
+    width: 800px;
+    height: 375px;
+    margin: 200px auto;
+    transform: translate(50%,-50%);
+}
+.glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(200px);
+    -moz-backdrop-filter: blur(200px);
+    -webkit-backdrop-filter: blur(200px);
+    border-radius: 20px;
+    opacity: 60%;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    z-index: 1;
+}
+
+/*Cube in Studios.html*/
+.title {
+    text-align: center;
+    color: #333;
+    font: 24px Helvetica, Arial, serif;
+}
+.creds {
+    text-align: center;
+    color: #666;
+    font: 12px Helvetica, Arial, serif;
+}
+.creds a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px dotted #000;
+}
+.three-d-container{
+    margin:30px auto;
+    width:300px;
+    height:300px;
+    border-radius: 3px;
+    position:relative;
+    perspective:1000px;
+    box-shadow:0 20px 60px rgba(0,0,0,0.2), 0 0 40px rgba(0,0,0,0.2) inset;
+}
+.three-d-cube{
+    width:100%;
+    height:100%;
+    position:absolute;
+    transition:        transform 1s;
+    transform-style:preserve-3d;
+    transform:translateZ( -150px );
+}
+.three-d-cube .three-d-item{
+    width:100%;
+    height:100%;
+    display:block;
+    margin:0;
+    position:absolute;
+}
+.three-d-cube .three-d-item img{
+    width:100%;
+    height:100%;
+    display:block;
+    margin:0;
+}
+.three-d-item:nth-child(1){
+    transform:rotateY(   0deg ) translateZ( 150px );
+}
+.three-d-item:nth-child(2){
+    transform:rotateX( 180deg ) translateZ( 150px );
+}
+.three-d-item:nth-child(3){
+    transform:rotateY(  90deg ) translateZ( 150px );
+}
+.three-d-item:nth-child(4){
+    transform:rotateY( -90deg ) translateZ( 150px );
+}
+.three-d-item:nth-child(5){
+    transform:rotateX(  90deg ) translateZ( 150px );
+}
+.three-d-item:nth-child(6){
+    transform:rotateX( -90deg ) translateZ( 150px );
+}
+.a:checked ~ .three-d-cube{
+    transform:translateZ( -150px ) rotateY(    0deg );
+}
+.b:checked ~ .three-d-cube{
+    transform:translateZ( -150px ) rotateX( -180deg );
+}
+.c:checked ~ .three-d-cube{
+    transform:translateZ( -150px ) rotateY(  -90deg );
+}
+.d:checked ~ .three-d-cube{
+    transform:translateZ( -150px ) rotateY(   90deg );
+}
+.e:checked ~ .three-d-cube{
+    transform:translateZ( -150px ) rotateX(  -90deg );
+}
+
+.f:checked ~ .three-d-cube{
+    transform:translateZ( -150px ) rotateX(   90deg );
+}
+.three-d-bullet{
+    margin:350px 10px 0 0;
+    float:left;
+}
+.three-d-bullet:first-child{
+    margin:350px 10px 0 88px;
+}
+/*Studios Footer*/
+.studios_footer{
+    position: relative;
+    top: 750px;
+    right: 0px;
+    width: 100%;
+    height: 120px; 
+    background-color: #2D3E50;
 }

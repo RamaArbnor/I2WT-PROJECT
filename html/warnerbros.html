@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--Gent Osmani-->
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <link rel='stylesheet' type='text/css' href='../other/styles/style.css'>
+        
+        <style>  
+            .nav-bar{
+                position: fixed;
+                transform: translateY(0%);
+            }
+            .sidebar li{
+                list-style-type: none;
+            }
+            .sidebar a{
+                width: 100%;
+                height: 100%;
+            }
+            *{
+                cursor: url(../images/Wile%20E.%20Coyote.cur), auto;
+            }
+            ::-webkit-scrollbar {
+                width: 5px;
+            }
+            ::-webkit-scrollbar-track {
+                background-color: darkgrey;
+                border-radius: 5px;
+            }
+            ::-webkit-scrollbar-thumb {
+                background-color: rgb(133, 174, 214);
+                /*background-color: rgb(22, 110, 200);*/
+                border-radius: 5px;
+            }            
+        </style>
+    </head>
+    <body>
+        <nav id='nav_bar' class='nav-bar'>
+			<div class='main-icon'><a href='../index.html'>CARTOONS</a></div>
+
+			<div class='nav-left'>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_0', 'nav_finger_0')" onmouseleave="leaveNavItem('nav_a_0', 'nav_finger_0')" onclick="jumpToPanel('nav_a_0')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_0"><a href='#historyPanel' id="nav_a_0">History</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_1', 'nav_finger_1')" onmouseleave="leaveNavItem('nav_a_1', 'nav_finger_1')" onclick="jumpToPanel('nav_a_1')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_1"><a href='#stylesPanel' id="nav_a_1">Styles</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_2', 'nav_finger_2')" onmouseleave="leaveNavItem('nav_a_2', 'nav_finger_2')" onclick="jumpToPanel('nav_a_2')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_2"><a href="studios.html" id="nav_a_2">Studios</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_3', 'nav_finger_3')" onmouseleave="leaveNavItem('nav_a_3', 'nav_finger_3')" onclick="jumpToPanel('nav_a_3')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_3"><a href='#principalsPanel' id="nav_a_3" style="margin-left: 12px;">Principles</a></div>
+			</div>
+
+			<div class='nav-right'>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_4', 'nav_finger_4')" onmouseleave="leaveNavItem('nav_a_4', 'nav_finger_4')" onclick="jumpToPanel('nav_a_4')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_4"><a id="nav_a_4" href='html/about.html'>About</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_5', 'nav_finger_5')" onmouseleave="leaveNavItem('nav_a_5', 'nav_finger_5')" onclick="jumpToPanel('nav_a_5')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_5"><a id="nav_a_5" href='html/login.html'>Log In</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_6', 'nav_finger_6')" onmouseleave="leaveNavItem('nav_a_6', 'nav_finger_6')" onclick="jumpToPanel('nav_a_6')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_6"><a id="nav_a_6" href='#'>Sign up</a></div>
+			</div>
+		</nav>
+        <nav class = "sidebar">
+            <ul>
+                <a href="disney.html"><li onmouseenter='rotateGif("disney_gif")' onmouseleave = 'defaultGif("disney_gif")'>
+                    <a href="disney.html"><img id="disney" src="../images/Disney+_logo.svg.webp"></a>
+                    <a href="disney.html"><img id='disney_gif' src="../images/1qJI.gif"></a>
+                </li></a>
+                <a href="dreamworks.html"><li onmouseenter='rotateGif("dreamworks_gif")' onmouseleave =   'defaultGif("dreamworks_gif")'>
+                    <a href="dreamworks.html"><img id="dreamworks" src="../images/DreamWorks-Animation-Logo.png"></a>
+                    <a href="dreamworks.html"><img id="dreamworks_gif"src="../images/dreamworks.gif"></a>
+        
+                </li></a>
+               <a href="warnerbros.html"> <li onmouseenter='rotateGif("warnerbros_gif")' onmouseleave = 'defaultGif("warnerbros_gif")'>
+                    <img id="warnerbros" src="../images/Warner_Bros._(2019)_logo.svg (1).png">
+                    <img id="warnerbros_gif"src="../images/giphy.gif">
+                </li></a>
+               <a href="pixar.html"> <li onmouseenter='rotateGif("pixar_gif")' onmouseleave = 'defaultGif("pixar_gif")'>
+                    <img id="pixar" src = "../images/1.png">
+                    <img id="pixar_gif"src="../images/4a2a5da8509e10042926f06bf93f32cb.gif">
+                </li></a>
+                <a href="studio_ghibli.html"><li onmouseenter='rotateGif("ghibli_gif")' onmouseleave = 'defaultGif("ghibli_gif")'>
+                    <img id="ghibli" src="../images/Studio_Ghibli_logo.png">
+                    <img id="ghibli_gif" src='../images/anime-studio-ghibli.gif'>
+                </li></a>
+            </ul>
+        </nav>
+        <img class ="background_image" src="../images/3025943.jpg">
+        <div class = "kontainer glass">
+            
+        </div>
+        <div class = "studio_content">            
+            <p>Warner Bros. Entertainment Inc. (commonly known as Warner Bros. and abbreviated as WB) is an American diversified multinational mass media and entertainment conglomerate headquartered at the Warner Bros. Studios complex in Burbank, California, and a subsidiary of AT&T's WarnerMedia through its Studios & Networks division. Founded in 1923 by four brothers Harry, Albert (Abe), Sam, and Jack Warner, the company established itself as a leader in the American film industry before diversifying into animation, television, and video games, and is one of the "Big Five" major American film studios, as well as a member of the Motion Picture Association (MPA).</p><br>
+
+            <p>The company is known for its film studio division, the Warner Bros. Pictures Group, which includes Warner Bros. Pictures, New Line Cinema, the Warner Animation Group, Castle Rock Entertainment, and DC Films. Among its other assets include the television production company Warner Bros. Television Studios; animation studios Warner Bros. Animation and Cartoon Network Studios; comic book publisher DC Comics; video game development and publishing arm Warner Bros. Interactive Entertainment; cable television channels Cartoon Network, Adult Swim, Boomerang, and Turner Classic Movies; and a 50% interest in broadcast television network The CW, which is co-owned with ViacomCBS. Warner Bros. also operates various divisions specializing in publishing, merchandising, music, theater, and theme parks. Bugs Bunny, a cartoon character created as part of the Looney Tunes series, is the company's official mascot.</p><br>
+            
+            <p>Warner's cartoon unit had its roots in the independent Harman and Ising studio. From 1930 to 1933, Disney alumni Hugh Harman and Rudolf Ising produced musical cartoons for Leon Schlesinger, who sold them to Warner. Harman and Ising introduced their character Bosko in the first Looney Tunes cartoon, Sinkin' in the Bathtub, and created a sister series, Merrie Melodies, in 1931.</p><br>
+
+            <p>Harman and Ising broke away from Schlesinger in 1933 due to a contractual dispute, taking Bosko with them to MGM. As a result, Schlesinger started his own studio, Leon Schlesinger Productions, which continued with Merrie Melodies while starting production on Looney Tunes starring Buddy, a Bosko clone. By the end of World War II, a new Schlesinger production team, including directors Friz Freleng (started in 1934), Tex Avery (started in 1935), Frank Tashlin (started in 1936), Bob Clampett (started in 1937), Chuck Jones (started in 1938), and Robert McKimson (started in 1946), was formed. Schlesinger's staff developed a fast-paced, irreverent style that made their cartoons globally popular.</p><br>
+        </div>
+        <div class="studios_footer">
+            <ul>
+                <ul class="column">
+                    <a href="">Arbnor</a>
+                    <a href="">Ylber</a>				
+                </ul>
+                <ul class="column">
+                    <a href="">Edon</a>
+                    <a href="">Anduena</a>								
+                </ul>
+                <ul class="column">
+                    <a href="">Gent</a>
+                    <a href="">Referenceszzzz</a>							
+                </ul>
+            </ul>
+        </div> 
+        <script src ="../other/script/script.js"></script>
+        <script type="text/javascript">
+            var disgif = document.getElementById('disney_gif')
+            var wbgif = document.getElementById('warnerbros_gif')
+            var dwgif = document.getElementById('dreamworks_gif')
+            var pxgif = document.getElementById('pixar_gif')
+            var ghgif = document.getElementById('ghibli_gif')
+    
+            function rotateGif(id) {
+                var disgif = document.getElementById(id)
+                disgif.style.transform = 'perspective(400px) rotateY(0deg)'
+            }
+            function defaultGif(id) {
+                var disgif = document.getElementById(id)
+                disgif.style.transform = 'perspective(400px) rotateY(90deg)'
+            }
+        </script>
+    </body>
+</html>

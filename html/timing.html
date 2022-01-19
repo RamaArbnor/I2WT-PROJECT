@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel='stylesheet' type='text/css' href='../other/styles/style.css'>
+	<link rel='stylesheet' type='text/css' href='../other/styles/principles.css'>
+	<title>The 12 Principles of Animation</title>
+	
+	<style type="text/css">
+		.content{
+			align-items: auto;
+			position: relative;
+			width: 90%;
+			/*margin-left: auto;*/
+			margin-right: 0px;
+			padding-top: 120px;
+			padding-bottom: 80px;
+			/*background-color: aqua;*/
+		}
+	</style>
+</head>
+<body onscroll="showArrow()">
+	<nav id='nav_bar' class='nav-bar'>
+		<div class='main-icon'><a href='../index.html'>CARTOONS</a></div>
+
+		<div class='nav-left'>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_0', 'nav_finger_0')" onmouseleave="leaveNavItem('nav_a_0', 'nav_finger_0')" onclick="jumpToPanel('nav_a_0')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_0"><a href='#historyPanel' id="nav_a_0">History</a></div>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_1', 'nav_finger_1')" onmouseleave="leaveNavItem('nav_a_1', 'nav_finger_1')" onclick="jumpToPanel('nav_a_1')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_1"><a href='#stylesPanel' id="nav_a_1">Styles</a></div>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_2', 'nav_finger_2')" onmouseleave="leaveNavItem('nav_a_2', 'nav_finger_2')" onclick="jumpToPanel('nav_a_2')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_2"><a href='#studiosPanel' id="nav_a_2">Studios</a></div>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_3', 'nav_finger_3')" onmouseleave="leaveNavItem('nav_a_3', 'nav_finger_3')" onclick="jumpToPanel('nav_a_3')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_3"><a href='principles.html' id="nav_a_3" style="margin-left: 12px;">Principles</a></div>
+		</div>
+
+		<div class='nav-right'>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_4', 'nav_finger_4')" onmouseleave="leaveNavItem('nav_a_4', 'nav_finger_4')" onclick="jumpToPanel('nav_a_4')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_4"><a id="nav_a_4" href='#'>About</a></div>
+		</div>
+	</nav>
+
+	<div class="sidebar-principles">
+		<a class="side-item" style="background-color: #F5E35D;" href="squash.html">Squash & Stretch</a>
+		<a class="side-item" style="background-color: #00ff7f;" href="anticipation.html">Anticipation</a>
+		<a class="side-item" style="background-color: #81C9B7;" href="staging.html">Staging</a>
+		<a class="side-item" style="background-color: #98BEE5;" href="methods.html">Straight Ahead <br>& Pose to Pose</a>
+		<a class="side-item" style="background-color: #E6A4B5;" href="follow.html">Follow Through & Overlapping Action</a>
+		<a class="side-item" style="background-color: #EA8384;" href="ease.html">Slow In & Slow Out</a>
+		<a class="side-item" style="background-color: #EFAE3D;" href="arc.html">Arc</a>
+		<a class="side-item" style="background-color: #bbc47b;" href="secondary.html">Secondary Action</a>
+		<a class="side-item" style="background-color: #519687; border-radius: 0px 12px 12px 0px; transform: translateX(30%);">Timing</a>
+		<a class="side-item" style="background-color: #234AA6;" href="exaggeration.html">Exaggeration</a>
+		<a class="side-item" style="background-color: #CE2493;" href="solid.html">Solid Drawing</a>
+		<a class="side-item" style="background-color: #EF3E54;" href="appeal.html">Appeal</a>
+	</div>
+
+	<div class="content">
+		<div>
+			<h2>Timing</h2>
+			
+			<p class="content-par">Timing involves a few simple principles: how quickly something moves and how long it stays still. Slowing something down in time adds weight, gravity, and mass. Speeding something up adds a sense of speed, lightness, and energy.</p>
+			<img src="../images/timing.jpg" style="width: 600px;">
+		</div>
+
+		<div style="background-color: whitesmoke; margin-top: 30px; padding-top: 50px;">
+			<p class="content-par">There are many ways to apply these principles to our work, but probably the simplest way to describe it is to go over my process when I started a piece of 2D animation done with pencil and hole-punched paper.</p>
+			<iframe width="720" height="405" src="https://www.youtube.com/embed/BarOk2p38LQ" frameborder="none" style="margin-top: 20px; margin-bottom: 80px; box-shadow: 2px 2px 10px;"></iframe>
+			<p class="content-par">If it’s a heavy body mechanics shot, I might look to YouTube for live action clips that feature some of what I’m trying to do. If it’s an acting shot with a voice track, I’ll look at live action reference of the voice actor—or another actor whose physicality matches what I think the shot needs—and try to decide how I want to portray the action.</p>
+		</div>
+
+		<div class="connector">
+			<a id="prev" class="prev" href="secondary.html" >Previous Principle</a>
+			<a id="next" class="next" href="exaggeration.html" >Next Principle</a>
+		</div>
+	</div>
+
+	<a class="to-top" id="to_top" href="#">^</a>
+
+	<script src='../other/script/script.js'></script>
+	<script src='../other/script/principles.js'></script>
+</body>
+</html>

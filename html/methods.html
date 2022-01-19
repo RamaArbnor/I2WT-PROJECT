@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel='stylesheet' type='text/css' href='../other/styles/style.css'>
+	<link rel='stylesheet' type='text/css' href='../other/styles/principles.css'>
+	<title>The 12 Principles of Animation</title>
+	
+	<style type="text/css">
+		.content{
+			align-items: auto;
+			position: relative;
+			width: 90%;
+			/*margin-left: auto;*/
+			margin-right: 0px;
+			padding-top: 120px;
+			padding-bottom: 80px;
+			/*background-color: aqua;*/
+		}
+	</style>
+</head>
+<body onscroll="showArrow()">
+	<nav id='nav_bar' class='nav-bar'>
+		<div class='main-icon'><a href='../index.html'>CARTOONS</a></div>
+
+		<div class='nav-left'>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_0', 'nav_finger_0')" onmouseleave="leaveNavItem('nav_a_0', 'nav_finger_0')" onclick="jumpToPanel('nav_a_0')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_0"><a href='history.html' id="nav_a_0">History</a></div>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_1', 'nav_finger_1')" onmouseleave="leaveNavItem('nav_a_1', 'nav_finger_1')" onclick="jumpToPanel('nav_a_1')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_1"><a href='styles.html' id="nav_a_1">Styles</a></div>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_2', 'nav_finger_2')" onmouseleave="leaveNavItem('nav_a_2', 'nav_finger_2')" onclick="jumpToPanel('nav_a_2')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_2"><a href='studios.html' id="nav_a_2">Studios</a></div>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_3', 'nav_finger_3')" onmouseleave="leaveNavItem('nav_a_3', 'nav_finger_3')" onclick="jumpToPanel('nav_a_3')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_3"><a href='principles.html' id="nav_a_3" style="margin-left: 12px;">Principles</a></div>
+		</div>
+
+		<div class='nav-right'>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_4', 'nav_finger_4')" onmouseleave="leaveNavItem('nav_a_4', 'nav_finger_4')" onclick="jumpToPanel('nav_a_4')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_4"><a id="nav_a_4" href='about.html'>About</a></div>
+		</div>
+	</nav>
+
+	<div class="sidebar-principles">
+		<a class="side-item" style="background-color: #F5E35D;" href="squash.html">Squash & Stretch</a>
+		<a class="side-item" style="background-color: #00ff7f;" href="anticipation.html">Anticipation</a>
+		<a class="side-item" style="background-color: #81C9B7;" href="staging.html">Staging</a>
+		<a class="side-item" style="background-color: #98BEE5; border-radius: 0px 12px 12px 0px; transform: translateX(30%);">Straight Ahead <br>& Pose to Pose</a>
+		<a class="side-item" style="background-color: #E6A4B5;" href="follow.html">Follow Through & Overlapping Action</a>
+		<a class="side-item" style="background-color: #EA8384;" href="ease.html">Slow In & Slow Out</a>
+		<a class="side-item" style="background-color: #EFAE3D;" href="arc.html">Arc</a>
+		<a class="side-item" style="background-color: #bbc47b;" href="secondary.html">Secondary Action</a>
+		<a class="side-item" style="background-color: #519687;" href="timing.html">Timing</a>
+		<a class="side-item" style="background-color: #234AA6;" href="exaggeration.html">Exaggeration</a>
+		<a class="side-item" style="background-color: #CE2493;" href="solid.html">Solid Drawing</a>
+		<a class="side-item" style="background-color: #EF3E54;" href="appeal.html">Appeal</a>
+	</div>
+
+	<div class="content">
+		<div>
+			<h2>Straight Ahead Action and Pose to Pose</h2>
+			
+			<p class="content-par">The fourth animation principle, Straight Ahead Action vs. Pose to Pose, is the only principle that hints at how to approach your animation. At first glance, it seems like they’re two separate ideas, as if two different animators tried it out and decided to animate in different ways. However, this principle encompasses much more than that, as it speaks to the vein of different philosophies that have pervaded art for centuries—structure vs. spontaneity, classic vs. romantic, id vs. ego.</p>
+		</div>
+
+		<div style="background-color: whitesmoke; margin-top: 30px; padding-top: 30px;">
+			<p class="content-par"></p>
+			<iframe width="720" height="405" src="https://www.youtube.com/embed/v8quCbt4C-c" frameborder="none" style="margin-top: 20px; margin-bottom: 80px; box-shadow: 2px 2px 10px;"></iframe>
+		</div>
+
+		<div style="margin-top: 30px; padding-top: 30px;">
+			<p class="content-par" style="font-size: 1.8em;">1. Straight Ahead</p>
+			<img src="../images/methods_straightahead.jpg" style="margin-top: 30px; margin-bottom: 30px;">
+			<p class="content-par">Straight ahead animation starts at the first drawing and works drawing to drawing to the end of a scene. You can lose size, volume, and proportions with this method, but it does have spontaneity and freshness. Fast, wild action scenes are done this way.</p>
+		</div>
+
+		<div style="background-color: whitesmoke; margin-top: 30px; padding-top: 30px;">
+			<p class="content-par" style="font-size: 1.8em;">2. Pose to Pose</p>
+			<img src="../images/methods_posetopose.jpg" style="margin-top: 30px; margin-bottom: 30px;">
+			<p class="content-par">Pose to Pose is more planned out and charted with key drawings done at intervals throughout the scene. Size, volumes, and proportions are controlled better this way, as is the action. The lead animator will turn charting and keys over to his assistant. An assistant can be better used with this method so that the animator doesn’t have to draw every drawing in a scene. An animator can do more scenes this way and concentrate on the planning of the animation.</p>
+		</div>
+
+		<div class="connector">
+			<a id="prev" class="prev" href="staging.html" >Previous Principle</a>
+			<a id="next" class="next" href="follow.html" >Next Principle</a>
+		</div>
+	</div>
+
+	<a class="to-top" id="to_top" href="#">^</a>
+
+	<script src='../other/script/script.js'></script>
+	<script src='../other/script/principles.js'></script>
+</body>
+</html>

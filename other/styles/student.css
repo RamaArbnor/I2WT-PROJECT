@@ -1,0 +1,66 @@
+@font-face {
+	src: url(../fonts/MilkyNice.ttf);
+	font-family: milk;
+}
+
+* {
+    /* background-color: black; */
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    
+}
+
+nav {
+    padding: 25px;
+    font-size: 2.5em;
+    color: #C2FFF9;
+    /* font-weight: bold; */
+    font-family: milk;
+}
+#second {
+    padding-right: 5%;
+}
+#first {
+    width: 100%;
+    background-color: #80ED99;
+    height: 750px;
+}
+#second {
+    background-color: #57CC99;
+    height: 500px;
+}
+#greet p{
+    font-size: 3.5em;
+    font-family: milk;
+    padding-left: 450px ;
+}
+#greet {
+    padding-top: 200px;
+}
+#pos {
+    color: #E05D5D;
+}
+.info-part {
+    float: left;
+    width: 33%;
+    /* text-align: center; */
+    font-family: milk;
+    padding-top: 75px;
+    /* padding-left: 25px; */
+}
+.info-part-mid {
+    /* float: left; */
+    /* width: 33%; */
+    /* text-align: center; */
+    font-family: milk;
+    padding-top: 125px;
+    padding-left: 125px;
+}
+
+.info-part p , .info-part h3{
+    /* margin: auto; */
+    font-size: 1.5em;
+    padding-left: 30%;
+    padding-bottom: 10px;
+}

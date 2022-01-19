@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--Gent Osmani-->
 <html>
     <head>
         <meta charset='utf-8'>
@@ -6,110 +7,65 @@
         
         <style>  
             .nav-bar{
-                position: static;
+                position: fixed;
                 transform: translateY(0%);
-            }
-            #studios_content{
-                position: static;
             }
             body {
                 background: lightblue;
                 color: white;
-                font-family: 'Montserrat', sans-serif;
-                font-size: 14px;
-                font-smoothing: anti-aliased;
             }
-            .sidebar li{
-            list-style-type: none;
-        }
+            section{
+                position: absolute;
+                top: 150px;
+            }
+            #three-d-cube img{
+                width: 50%;
+                height: auto;
+            }
         </style>
     </head>
     <body>
         <nav id='nav_bar' class='nav-bar'>
-			<div class='main-icon'><a href='#'>CARTOONS</a></div>
+			<div class='main-icon'><a href='../index.html'>CARTOONS</a></div>
 
 			<div class='nav-left'>
-				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_0', 'nav_finger_0')" onmouseleave="leaveNavItem('nav_a_0', 'nav_finger_0')" onclick="jumpToPanel('nav_a_0')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_0"><a href='#historyPanel' id="nav_a_0">History</a></div>
-				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_1', 'nav_finger_1')" onmouseleave="leaveNavItem('nav_a_1', 'nav_finger_1')" onclick="jumpToPanel('nav_a_1')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_1"><a href='#stylesPanel' id="nav_a_1">Styles</a></div>
-				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_2', 'nav_finger_2')" onmouseleave="leaveNavItem('nav_a_2', 'nav_finger_2')" onclick="jumpToPanel('nav_a_2')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_2"><a href='#studiosPanel' id="nav_a_2">Studios</a></div>
-				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_3', 'nav_finger_3')" onmouseleave="leaveNavItem('nav_a_3', 'nav_finger_3')" onclick="jumpToPanel('nav_a_3')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_3"><a href='#principalsPanel' id="nav_a_3" style="margin-left: 12px;">Principles</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_0', 'nav_finger_0')" onmouseleave="leaveNavItem('nav_a_0', 'nav_finger_0')" onclick="jumpToPanel('nav_a_0')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_0"><a href='history.html' id="nav_a_0">History</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_1', 'nav_finger_1')" onmouseleave="leaveNavItem('nav_a_1', 'nav_finger_1')" onclick="jumpToPanel('nav_a_1')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_1"><a href='styles.html' id="nav_a_1">Styles</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_2', 'nav_finger_2')" onmouseleave="leaveNavItem('nav_a_2', 'nav_finger_2')" onclick="jumpToPanel('nav_a_2')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_2"><a href='studios.html' id="nav_a_2">Studios</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_3', 'nav_finger_3')" onmouseleave="leaveNavItem('nav_a_3', 'nav_finger_3')" onclick="jumpToPanel('nav_a_3')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_3"><a href='principles.html' id="nav_a_3" style="margin-left: 12px;">Principles</a></div>
 			</div>
 
 			<div class='nav-right'>
-				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_4', 'nav_finger_4')" onmouseleave="leaveNavItem('nav_a_4', 'nav_finger_4')" onclick="jumpToPanel('nav_a_4')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_4"><a id="nav_a_4" href='html/about.html'>About</a></div>
-				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_5', 'nav_finger_5')" onmouseleave="leaveNavItem('nav_a_5', 'nav_finger_5')" onclick="jumpToPanel('nav_a_5')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_5"><a id="nav_a_5" href='html/login.html'>Log In</a></div>
-				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_6', 'nav_finger_6')" onmouseleave="leaveNavItem('nav_a_6', 'nav_finger_6')" onclick="jumpToPanel('nav_a_6')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_6"><a id="nav_a_6" href='#'>Sign up</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_4', 'nav_finger_4')" onmouseleave="leaveNavItem('nav_a_4', 'nav_finger_4')" onclick="jumpToPanel('nav_a_4')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_4"><a id="nav_a_4" href='about.html'>About</a></div>
 			</div>
+            <section class="three-d-container">
+			<input type="radio" checked class="three-d-bullet a" name="three-d">
+			<input type="radio" class="three-d-bullet b" name="three-d">
+			<input type="radio" class="three-d-bullet c" name="three-d">
+			<input type="radio" class="three-d-bullet d" name="three-d">
+			<input type="radio" class="three-d-bullet e" name="three-d">
+            <!--<input type="radio" class="three-d-bullet f" name="three-d">-->
+			<div class="three-d-cube">
+				<figure class="three-d-item">
+                    <a href="disney.html"><img src="../images/disneylogo.png" alt=""></a>
+				</figure>
+				<figure class="three-d-item">
+					<a href="dreamworks.html"><img src="../images/DreamWorks-Animation-Logo-2016-present.jpg" alt=""></a>
+				</figure>
+				<figure class="three-d-item">
+					<a href="warnerbros.html"><img src="../images/WB_logo_online.svg" alt=""></a>
+				</figure>
+				<figure class="three-d-item">
+					<a href="pixar.html"><img src="../images/Pixar-logo.jpg" alt=""></a>
+				</figure>
+				<figure class="three-d-item">
+					<a href="studio_ghibli.html"><img src="../images/b400a2b4ca3da09dbee9ea425e3bd857.jpg" alt=""></a>
+				</figure>
+				<figure class="three-d-item">
+					<a href=""><img src="../images/33-332570_painting-brush-for-iphone-paint-brushes-and-paints-cartoon.jpg" alt=""></a>
+				</figure>
+			</div>
+		</section>
 		</nav>
-        <nav class = "sidebar">
-            <ul>
-                <li onmouseenter='rotateGif("disney_gif")' onmouseleave = 'defaultGif("disney_gif")'>
-                    <img id="disney" src="../images/Disney+_logo.svg.webp">
-                    <img id='disney_gif' src="../images/1qJI.gif">
-                </li>
-                <li onmouseenter='rotateGif("dreamworks_gif")' onmouseleave =   'defaultGif("dreamworks_gif")'>
-                    <img id="dreamworks" src="../images/DreamWorks-Animation-Logo.png">
-                    <img id="dreamworks_gif"src="../images/dreamworks.gif">
-        
-                </li>
-                <li onmouseenter='rotateGif("warnerbros_gif")' onmouseleave = 'defaultGif("warnerbros_gif")'>
-                    <img id="warnerbros" src="../images/Warner_Bros._(2019)_logo.svg (1).png">
-                    <img id="warnerbros_gif"src="../images/giphy.gif">
-                </li>
-                <li onmouseenter='rotateGif("pixar_gif")' onmouseleave = 'defaultGif("pixar_gif")'>
-                    <img id="pixar" src = "../images/1.png">
-                    <img id="pixar_gif"src="../images/4a2a5da8509e10042926f06bf93f32cb.gif">
-                </li>
-                <li onmouseenter='rotateGif("ghibli_gif")' onmouseleave = 'defaultGif("ghibli_gif")'>
-                    <img id="ghibli" src="../images/Studio_Ghibli_logo.png">
-                    <img id="ghibli_gif" src='../images/anime-studio-ghibli.gif'>
-                </li>
-            </ul>
-        </nav>
-        
-        <div id = "content_background"></div>
-        <div id = "studio_content">
-            <p>hdfbdsFdsjfgdshfgdshfghfgfdhjfgdhfgdhfgdhfgdhfgdsfhdgf</p>
-            <p>hdfbdsFdsjfgdshfgdshfghfgfdhjfgdhfgdhfgdhfgdhfgdsfhdgf</p>
-            <p>hdfbdsFdsjfgdshfgdshfghfgfdhjfgdhfgdhfgdhfgdhfgdsfhdgf</p>
-            <p>hdfbdsFdsjfgdshfgdshfghfgfdhjfgdhfgdhfgdhfgdhfgdsfhdgf</p><p>hdfbdsFdsjfgdshfgdshfghfgfdhjfgdhfgdhfgdhfgdhfgdsfhdgf</p>
-            <p>hdfbdsFdsjfgdshfgdshfghfgfdhjfgdhfgdhfgdhfgdhfgdsfhdgf</p>
-            <p>hdfbdsFdsjfgdshfgdshfghfgfdhjfgdhfgdhfgdhfgdhfgdsfhdgf</p>
-        </div>
-<!--
-        <div class="footer">
-            <ul>
-                <ul class="column">
-                    <a href="">Arbnor</a>
-                    <a href="">Ylber</a>				
-                </ul>
-                <ul class="column">
-                    <a href="">Edon</a>
-                    <a href="">Anduena</a>								
-                </ul>
-                <ul class="column">
-                    <a href="">Gent</a>
-                    <a href="">Referenceszzzz</a>							
-                </ul>
-            </ul>
-        </div> 
--->
-        <script src ="../other/script/script.js"></script>
-        <script type="text/javascript">
-            var disgif = document.getElementById('disney_gif')
-            var wbgif = document.getElementById('warnerbros_gif')
-            var dwgif = document.getElementById('dreamworks_gif')
-            var pxgif = document.getElementById('pixar_gif')
-            var ghgif = document.getElementById('ghibli_gif')
-    
-            function rotateGif(id) {
-                var disgif = document.getElementById(id)
-                disgif.style.transform = 'perspective(400px) rotateY(0deg)'
-            }
-            function defaultGif(id) {
-                var disgif = document.getElementById(id)
-                disgif.style.transform = 'perspective(400px) rotateY(90deg)'
-            }
-        </script>
     </body>
 </html>

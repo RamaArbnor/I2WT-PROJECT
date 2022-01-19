@@ -1,0 +1,250 @@
+.cssProp {
+                height: 20px;
+                width: 20px;
+                background-color: white;
+                border-radius: 50%;
+                display: block;
+                border-color: black;
+                border-radius: 10;
+                border-style: solid;
+                transition: 0.5s ease;
+                position: absolute;
+                z-index: +1;
+                transition: all 0.3s ease-in-out;
+                left: 147px;
+                top: 129px;
+}
+.cssProp:hover {
+                transform: scale(1.3,1.3);
+}
+#dot2 {
+                top: 212px;
+/*                left: 150px;*/
+/*                left: 11%;*/
+            }
+            #dot3 {
+                top: 295px;
+/*                left: 11%;*/
+            }
+            #dot4 {
+                top: 378px;
+/*                left: 11%;*/
+            }
+            #dot5 {
+                top: 461px;
+/*                left: 11%;*/
+            }
+            #dot6 {
+                top: 544px;
+/*                left: 11%;*/
+            }
+            .vl {
+                height: 430px;
+                width: 2.3px;
+                background-color: black;
+                display: block;
+                position: absolute;
+                left: 159px;
+                top: 129px;
+}
+#slides {
+                width: 1100px;
+                height: 553px;
+                background-color: #2d3e50;
+                position: absolute;
+                left: 222px;
+                top: 76px;
+                border-radius: 10px;
+                overflow: scroll;
+                display: none;
+        }
+#pointer {
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 21px 52px 21px 0;
+                border-color: transparent #2d3e50 transparent transparent;
+                position: absolute;
+                top: 118px;
+                left: 185px;
+                transition: all 0.3s ease-in-out;
+                z-index: +11;
+                display: none;
+        }
+#pointerB {
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 21px 52px 21px 0;
+                border-color: transparent gray transparent transparent;
+                position: absolute;
+                top: 118px;
+                left: 182px;
+                transition: all 0.3s ease-in-out;
+                z-index: +10;
+                display: none;
+}
+.arrowi {
+    position: absolute;
+    height: 64px;
+    left: 173px;
+    top: 145px;
+}
+#arrow2{
+    top: 310px;
+}
+#arrow3{
+    top: 475px;
+}
+#arrow4{
+    left: 130px;
+    top: 230px;
+}
+#arrow5{
+    left: 130px;
+    top: 393px;
+}
+#starter{
+    position: relative;
+    top: 25px;
+    font-size: 23px;
+}
+.vitet {
+    position: absolute;
+    left: 49px;
+    top: 119px;
+    font-family: komikski;
+    font-size: 25px;
+    color: #85D1C2; 
+    text-shadow: 1px 1px 2px #8A928C;
+    transition: .5s;
+}
+.vitet:hover{
+    text-shadow: 2px 2px white;
+    color: black;
+    
+    
+}
+.Evolimi{
+    height: 38px;
+    position: absolute;
+    left: 116px;
+    top: 160px;
+    z-index: -100;
+    
+}
+#E2{
+    top: 240px;
+    left: 176px;
+    height: 48px;
+}
+#E3{
+    top: 323px;
+    left: 121px;
+    height: 47px;
+}
+#E4{
+    top: 407px;
+    left: 174px;
+    height: 47px;
+}
+#E5{
+    top: 494px;
+    left: 111px;
+    height: 36px;
+}
+#starter p{
+    position: absolute;
+    top: 96px;
+    font-size: 19px;
+    text-align: justify;
+    width: 615px;
+    left: 324px;
+}
+#starter img{
+    width: 357px;
+    position: absolute;
+    top: 98px;
+    left: 969px;
+}
+#starter>span>span{
+    position: absolute;
+    top: 309px;
+    left: 0px;
+}
+h1{
+    position: absolute;
+    left: 521px;
+}
+
+#viti2{
+    top: 201px;
+}
+#viti3{
+    top: 282px;
+}
+#viti4{
+    top: 367px;
+}
+#viti5{
+    top: 451px;
+}
+#viti6{
+    top: 535px;
+    font-size: 21px;
+    left: 47px;
+}
+.gifat{
+    position: absolute;
+    height: 82px;
+    width: 136px;
+    border-radius: 5px;
+    left: 4px;
+    opacity: 0;
+    top: 96px;
+    z-index: +20;
+    display: none;
+    transition: all ease-in-out .4s;
+}
+
+#gif2{
+    top: 180px;
+/*    width: 137px;*/
+}
+#gif3{
+    top: 260px;
+/*    height: 77px;*/
+}
+#gif4{
+    top: 345px;
+/*    height: 86px;*/
+/*    width: 139px;*/
+}
+#gif5{
+    top: 430px;
+/*    width: 136px;*/
+}
+#gif6{
+    top: 513px;
+/*    width: 135px;*/
+}
+
+#dot1:hover + #gif1{
+    display: block;
+}
+
+#dot2:hover + #gif2{
+    display: block;
+}
+#dot3:hover + #gif3{
+    display: block;
+}
+#dot4:hover + #gif4{
+    display: block;
+}
+#dot5:hover + #gif5{
+    display: block;
+}
+#dot6:hover + #gif6{
+    display: block;
+}

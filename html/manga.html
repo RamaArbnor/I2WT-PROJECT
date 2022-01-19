@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = 'utf-8'>
+        <link rel='stylesheet' type='text/css' href='../other/styles/style.css'>
+        <link rel='stylesheet' type='text/css' href='manga.html'>
+        <link rel='stylesheet' type='text/css' href='dimensionaltwo.html'>
+        <link rel='stylesheet' type='text/css' href='dimensionalthree.html'>
+        <link rel='stylesheet' type='text/css' href='traditional.html'>
+        <!--<link rel='stylesheet' type='text/css' href='dimensionalthree.html'>-->
+
+        <title>Animation Styles</title>
+        <style>  
+        body { 
+        background: url('../images/bufi.jpg') no-repeat center fixed; 
+        background-size: cover;
+        }
+           .nav-bar{
+                position: fixed;
+                transform: translateY(0%);
+                border: 0px;
+            }
+            #studios_content{
+                position: static;
+            }
+            body {
+                
+                color: white;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 14px;
+                /*font-smoothing: anti-aliased;*/
+                
+            }
+            .sidebar li{
+            list-style-type: none;
+        }
+      
+        h2{
+            color:black;
+            padding-top: 20px;
+            padding-bottom: 30px;
+            font-size: 24;
+        }
+           
+        
+        h3 {
+            text-align: justify;
+             color:black;
+            padding-top:0px;
+            padding-bottom: 30px;
+            font-size: 24;
+        }
+            p {
+                font-size: 18px;
+                color:black;
+                text-align: justify;
+            }
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #364b60;
+  overflow-x: hidden;
+  padding-top: 20px;
+  margin-top: 7vh;
+}
+
+.sidenav a {
+    margin-top: 30px;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FFF;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+h5 {
+  color: black;
+}
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 50px;
+  margin-top:5%;
+}
+.picture{
+    border-radius: 20px;
+    height: 200px;
+}
+        </style>
+    </head>
+     <body onscroll='showNav()'>
+
+        <!-- header -->
+        <nav id='nav_bar' class='nav-bar'>
+			<div class='main-icon'><a href='../index.html'>CARTOONS</a></div>
+
+			<div class='nav-left'>
+                <div class='nav-cat' onmouseenter="hoverNavItem('nav_a_0', 'nav_finger_0')" onmouseleave="leaveNavItem('nav_a_0', 'nav_finger_0')" onclick="jumpToPanel('nav_a_0')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_0"><a href='history.html' id="nav_a_0">History</a></div>
+                <div class='nav-cat' onmouseenter="hoverNavItem('nav_a_1', 'nav_finger_1')" onmouseleave="leaveNavItem('nav_a_1', 'nav_finger_1')" onclick="jumpToPanel('nav_a_1')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_1"><a href='styles.html' id="nav_a_1">Styles</a></div>
+                <div class='nav-cat' onmouseenter="hoverNavItem('nav_a_2', 'nav_finger_2')" onmouseleave="leaveNavItem('nav_a_2', 'nav_finger_2')" onclick="jumpToPanel('nav_a_2')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_2"><a href='studios.html' id="nav_a_2">Studios</a></div>
+                <div class='nav-cat' onmouseenter="hoverNavItem('nav_a_3', 'nav_finger_3')" onmouseleave="leaveNavItem('nav_a_3', 'nav_finger_3')" onclick="jumpToPanel('nav_a_3')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_3"><a href='principles.html' id="nav_a_3" style="margin-left: 12px;">Principles</a></div>
+            </div>
+
+            <div class='nav-right'>
+                <div class='nav-cat' onmouseenter="hoverNavItem('nav_a_4', 'nav_finger_4')" onmouseleave="leaveNavItem('nav_a_4', 'nav_finger_4')" onclick="jumpToPanel('nav_a_4')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_4"><a id="nav_a_4" href='about.html'>About</a></div>
+            </div>
+		</nav>
+        <!-- sidebar -->
+        <div class="sidenav">
+            <a href="traditional.html">Traditional</a>
+            <a href="dimensionaltwo.html">Two Dimensional</a>
+            <a href="dimensionalthree.html">Three Dimensional</a>
+            <a href="#">Manga</a>
+            <a href="rotoscope.html">Rotoscope</a>
+        </div>
+    
+            <!---<div style="background-image:url('https://www.yukfoo.net/data/catalogue/items/ICEdewlineupalex_1271x635.jpg');"></div>;--->
+
+            <div id = "content" class="main">
+                <div>
+                    <img class="picture" src="../images/manga.jpg" alt="3-D" width='auto'>
+                    <img class="picture" src="../images/mangaa.png" alt="3-D" width='auto'>
+                </div>
+                <h2>Manga</h2>
+                            <h3>What is Manga?</h3>
+                            <p>Manga (Japanese: 漫画 [maŋga]) are comics or graphic novels originating from Japan.
+                                Most manga conform to a style developed in Japan in the late 19th century,
+                                and the form has a long prehistory in earlier Japanese art.
+                                The term manga is used in Japan to refer to both comics and cartooning.
+                                Outside of Japan, the word is typically used to refer to comics originally
+                                published in the country.</p><br>
+                    
+                            <p>The word "manga" comes from the Japanese word 漫画, (katakana: マンガ; hiragana:
+                                 まんが) composed of the two kanji 漫 (man) meaning "whimsical or impromptu" and 画
+                                  (ga) meaning "pictures". The same term is the root of the Korean word for comics,
+                                   "manhwa", and the Chinese word "manhua".</p><br>
+                    
+                               <p> The word first came into common usage in the late 18th century with the publication of such works as Santō Kyōden's picturebook Shiji no yukikai (1798),and in the early 
+                                 19th century with such works as Aikawa Minwa's Manga hyakujo (1814) and the celebrated 
+                                 Hokusai Manga books (1814–1834) containing assorted drawings from the sketchbooks of the 
+                                 famous ukiyo-e artist Hokusai.[36] Rakuten Kitazawa (1876–1955) first used the word 
+                                 "manga" in the modern sense.</p><br>
+                                
+                                <p>In Japanese, "manga" refers to all kinds of cartooning, comics, and animation. 
+                                    Among English speakers, "manga" has the stricter meaning of "Japanese comics",
+                                     in parallel to the usage of "anime" in and outside Japan. The term "ani-manga" 
+                                     is used to describe comics produced from animation cels. </p>
+                           
+                                 <br><br>
+            </div>
+	<script src='../other/script/script.js'></script>
+
+    </body>
+</html>

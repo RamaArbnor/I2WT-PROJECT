@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel='stylesheet' type='text/css' href='../other/styles/style.css'>
+	<link rel='stylesheet' type='text/css' href='../other/styles/principles.css'>
+	<title>The 12 Principles of Animation</title>
+	
+	<style type="text/css">
+		.content{
+			align-items: auto;
+			position: relative;
+			width: 90%;
+			/*margin-left: auto;*/
+			margin-right: 0px;
+			padding-top: 120px;
+			padding-bottom: 80px;
+			/*background-color: aqua;*/
+		}
+	</style>
+</head>
+<body onscroll="showArrow()">
+	<nav id='nav_bar' class='nav-bar'>
+		<div class='main-icon'><a href='../index.html'>CARTOONS</a></div>
+
+		<div class='nav-left'>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_0', 'nav_finger_0')" onmouseleave="leaveNavItem('nav_a_0', 'nav_finger_0')" onclick="jumpToPanel('nav_a_0')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_0"><a href='history.html' id="nav_a_0">History</a></div>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_1', 'nav_finger_1')" onmouseleave="leaveNavItem('nav_a_1', 'nav_finger_1')" onclick="jumpToPanel('nav_a_1')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_1"><a href='styles.html' id="nav_a_1">Styles</a></div>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_2', 'nav_finger_2')" onmouseleave="leaveNavItem('nav_a_2', 'nav_finger_2')" onclick="jumpToPanel('nav_a_2')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_2"><a href='studios.html' id="nav_a_2">Studios</a></div>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_3', 'nav_finger_3')" onmouseleave="leaveNavItem('nav_a_3', 'nav_finger_3')" onclick="jumpToPanel('nav_a_3')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_3"><a href='principles.html' id="nav_a_3" style="margin-left: 12px;">Principles</a></div>
+		</div>
+
+		<div class='nav-right'>
+			<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_4', 'nav_finger_4')" onmouseleave="leaveNavItem('nav_a_4', 'nav_finger_4')" onclick="jumpToPanel('nav_a_4')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_4"><a id="nav_a_4" href='about.html'>About</a></div>
+		</div>
+	</nav>
+
+	<div class="sidebar-principles">
+		<a class="side-item" style="background-color: #F5E35D; border-radius: 0px 12px 12px 0px; transform: translateX(30%);">Squash & Stretch</a>
+		<a class="side-item" style="background-color: #00ff7f;" href="anticipation.html">Anticipation</a>
+		<a class="side-item" style="background-color: #81C9B7;" href="staging.html">Staging</a>
+		<a class="side-item" style="background-color: #98BEE5;" href="methods.html">Straight Ahead <br>& Pose to Pose</a>
+		<a class="side-item" style="background-color: #E6A4B5;" href="follow.html">Follow Through & Overlapping Action</a>
+		<a class="side-item" style="background-color: #EA8384;" href="ease.html">Slow In & Slow Out</a>
+		<a class="side-item" style="background-color: #EFAE3D;" href="arc.html">Arc</a>
+		<a class="side-item" style="background-color: #bbc47b;" href="secondary.html">Secondary Action</a>
+		<a class="side-item" style="background-color: #519687;" href="timing.html">Timing</a>
+		<a class="side-item" style="background-color: #234AA6;" href="exaggeration.html">Exaggeration</a>
+		<a class="side-item" style="background-color: #CE2493;" href="solid.html">Solid Drawing</a>
+		<a class="side-item" style="background-color: #EF3E54;" href="appeal.html">Appeal</a>
+	</div>
+
+	<div class="content">
+		<div>
+			<h2>Squash and Stretch</h2>
+			
+			<p class="content-par">Squash and Stretch (S&S for short) is the principle of applying a contrasting change of shape—from a squash pose to a stretch pose or vice versa—to give a feeling of fleshiness, flexibility, and life in animation. The absence of squash and stretch gives a rigidity or stiffness to the motion. The transition between a proper Squash pose to a Stretch pose, or the other way around, breaks the perfect solidity that CG animation in particular inherently gives to everything.</p>
+		</div>
+
+		<div style="background-color: whitesmoke; margin-top: 30px; padding-top: 30px;">
+			<img src="../images/ss_bounce_ball.jpg" style="margin-top: 30px; margin-bottom: 30px;">
+			<p class="content-par">Here the principle of S&S is boiled down to it’s essence on the classic Bouncing Ball. There is a Squash pose on the drawing where the ball is in contact with the ground, and Stretch poses just before and after it to provide the necessary contrast.</p>
+		</div>
+
+		<div style="margin-top: 30px; padding-top: 30px;">
+			<p class="content-par">Let’s look at it in motion. In the clip below, the S&S is not extreme, but we can see how even a subtle amount can make a difference by giving a touch of elasticity to the material. It no longer feels like a cardboard cutout or rock hard ball.</p>
+			<iframe width="720" height="405" src="https://www.youtube.com/embed/haa7n3UGyDc" frameborder="none" style="margin-top: 20px; margin-bottom: 80px; box-shadow: 2px 2px 10px;"></iframe>
+			<p class="content-par">Squash and Stretch gives life and flexibility but not only that! It can help convey what the material that something is made of. In the bouncing ball case, very little S&S will indicate a firmer material, like a ping-pong ball or a bowling ball. A rubber ball, would naturally have more S&S. The application of S&S can be quite detailed when done with nuance and not just applied with a thick brush. More does not necessarily mean better.</p>
+		</div>
+
+		<div class="connector">
+			<!-- <a id="prev" class="prev" href="" >Previous Principle</a> -->
+			<a id="next" class="next" href="anticipation.html" >Next Principle</a>
+		</div>
+	</div>
+
+	<a class="to-top" id="to_top" href="#">^</a>
+
+	<script src='../other/script/script.js'></script>
+	<script src='../other/script/principles.js'></script>
+</body>
+</html>

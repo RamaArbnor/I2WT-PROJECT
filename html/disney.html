@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--Gent Osmani-->
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <link rel='stylesheet' type='text/css' href='../other/styles/style.css'>
+        
+        <style> 
+            /*body{
+                overflow-y: scroll;
+            }*/
+            .nav-bar{
+                position: fixed;
+                transform: translateY(0%);
+            }
+            .sidebar li{
+                list-style-type: none;
+            }
+            .sidebar a{
+                width: 100%;
+                height: 100%;
+            }
+            ::-webkit-scrollbar {
+                width: 5px;
+            }
+            ::-webkit-scrollbar-track {
+                background-color: darkgrey;
+                border-radius: 5px;
+            }
+            ::-webkit-scrollbar-thumb {
+                background-color: rgb(7, 60, 164);
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav id='nav_bar' class='nav-bar'>
+			<div class='main-icon'><a href='../index.html'>CARTOONS</a></div>
+
+			<div class='nav-left'>
+                <div class='nav-cat' onmouseenter="hoverNavItem('nav_a_0', 'nav_finger_0')" onmouseleave="leaveNavItem('nav_a_0', 'nav_finger_0')" onclick="jumpToPanel('nav_a_0')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_0"><a href='history.html' id="nav_a_0">History</a></div>
+                <div class='nav-cat' onmouseenter="hoverNavItem('nav_a_1', 'nav_finger_1')" onmouseleave="leaveNavItem('nav_a_1', 'nav_finger_1')" onclick="jumpToPanel('nav_a_1')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_1"><a href='styles.html' id="nav_a_1">Styles</a></div>
+                <div class='nav-cat' onmouseenter="hoverNavItem('nav_a_2', 'nav_finger_2')" onmouseleave="leaveNavItem('nav_a_2', 'nav_finger_2')" onclick="jumpToPanel('nav_a_2')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_2"><a href='studios.html' id="nav_a_2">Studios</a></div>
+                <div class='nav-cat' onmouseenter="hoverNavItem('nav_a_3', 'nav_finger_3')" onmouseleave="leaveNavItem('nav_a_3', 'nav_finger_3')" onclick="jumpToPanel('nav_a_3')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_3"><a href='principles.html' id="nav_a_3" style="margin-left: 12px;">Principles</a></div>
+            </div>
+
+            <div class='nav-right'>
+                <div class='nav-cat' onmouseenter="hoverNavItem('nav_a_4', 'nav_finger_4')" onmouseleave="leaveNavItem('nav_a_4', 'nav_finger_4')" onclick="jumpToPanel('nav_a_4')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_4"><a id="nav_a_4" href='about.html'>About</a></div>
+            </div>
+		</nav>
+        <nav class = "sidebar">
+            <ul>
+                <a href="disney.html"><li onmouseenter='rotateGif("disney_gif")' onmouseleave = 'defaultGif("disney_gif")'>
+                    <a href="disney.html"><img id="disney" src="../images/Disney+_logo.svg.webp"></a>
+                    <a href="disney.html"><img id='disney_gif' src="../images/1qJI.gif"></a>
+                </li></a>
+                <a href="dreamworks.html"><li onmouseenter='rotateGif("dreamworks_gif")' onmouseleave =   'defaultGif("dreamworks_gif")'>
+                    <a href="dreamworks.html"><img id="dreamworks" src="../images/DreamWorks-Animation-Logo.png"></a>
+                    <a href="dreamworks.html"><img id="dreamworks_gif"src="../images/dreamworks.gif"></a>
+        
+                </li></a>
+               <a href="warnerbros.html"> <li onmouseenter='rotateGif("warnerbros_gif")' onmouseleave = 'defaultGif("warnerbros_gif")'>
+                    <img id="warnerbros" src="../images/Warner_Bros._(2019)_logo.svg (1).png">
+                    <img id="warnerbros_gif"src="../images/giphy.gif">
+                </li></a>
+               <a href="pixar.html"> <li onmouseenter='rotateGif("pixar_gif")' onmouseleave = 'defaultGif("pixar_gif")'>
+                    <img id="pixar" src = "../images/1.png">
+                    <img id="pixar_gif"src="../images/4a2a5da8509e10042926f06bf93f32cb.gif">
+                </li></a>
+                <a href="studio_ghibli.html"><li onmouseenter='rotateGif("ghibli_gif")' onmouseleave = 'defaultGif("ghibli_gif")'>
+                    <img id="ghibli" src="../images/Studio_Ghibli_logo.png">
+                    <img id="ghibli_gif" src='../images/anime-studio-ghibli.gif'>
+                </li></a>
+            </ul>
+        </nav>
+        <img class ="background_image" src="../images/Walt-Disney-Studios.jpg">
+        <div class = "kontainer glass">
+            
+        </div>
+        <div class = "studio_content">            
+            <p>Walt Disney Animation Studios (WDAS), sometimes shortened to Disney Animation, is an American animation studio that creates animated features and short films for The Walt Disney Company. The company's production logo features a scene from its first synchronized sound cartoon, Steamboat Willie (1928). Founded on October 16, 1923 by brothers Walt Disney and Roy O. Disney, it is the oldest-running animation studio in the world. It is currently organized as a division of Walt Disney Studios and is headquartered at the Roy E. Disney Animation Building at the Walt Disney Studios lot in Burbank, California. Since its foundation, the studio has produced 60 feature films, from Snow White and the Seven Dwarfs (1937) to Encanto (2021), and hundreds of short films.</p><br>
+
+            <p>Founded as Disney Brothers Cartoon Studio in 1923, renamed Walt Disney Studio in 1926 and incorporated as Walt Disney Productions in 1929, the studio was dedicated to producing short films until it entered feature production in 1934, resulting in 1937's Snow White and the Seven Dwarfs, one of the first full-length animated feature films and the first U.S.-based one. In 1986, during a large corporate restructuring, Walt Disney Productions, which had grown from a single animation studio into an international multimedia company, was renamed The Walt Disney Company and the animation studio Walt Disney Feature Animation in order to differentiate it from the other divisions. Its current name was adopted in 2007 after Pixar Animation Studios was acquired by Disney in the previous year.</p><br>
+
+            <p>For much of its existence, the studio was recognized as the premier American animation studio; it developed many of the techniques, concepts and principles that became standard practices of traditional animation. The studio also pioneered the art of storyboarding, which is now a standard technique used in both animated and live-action filmmaking. The studio's catalog of animated features is among Disney's most notable assets, with the stars of its animated shorts – Mickey Mouse, Minnie Mouse, Donald Duck, Daisy Duck, Goofy, and Pluto – becoming recognizable figures in popular culture and mascots for The Walt Disney Company as a whole.</p>
+        </div>
+        <div class="studios_footer">
+            <ul>
+                <ul class="column">
+                    <a href="">Arbnor</a>
+                    <a href="">Ylber</a>				
+                </ul>
+                <ul class="column">
+                    <a href="">Edon</a>
+                    <a href="">Anduena</a>								
+                </ul>
+                <ul class="column">
+                    <a href="">Gent</a>
+                    <a href="">Referenceszzzz</a>							
+                </ul>
+            </ul>
+        </div> 
+        <script src ="../other/script/script.js"></script>
+        <script type="text/javascript">
+            
+            var disgif = document.getElementById('disney_gif');
+            var wbgif = document.getElementById('warnerbros_gif');
+            var dwgif = document.getElementById('dreamworks_gif');
+            var pxgif = document.getElementById('pixar_gif');
+            var ghgif = document.getElementById('ghibli_gif');
+    
+            function rotateGif(id) {
+                var disgif = document.getElementById(id);
+                disgif.style.transform = 'perspective(400px) rotateY(0deg)';
+            }
+            function defaultGif(id) {
+                var disgif = document.getElementById(id);
+                disgif.style.transform = 'perspective(400px) rotateY(90deg)';
+            }       
+        </script>
+    </body>
+</html>
